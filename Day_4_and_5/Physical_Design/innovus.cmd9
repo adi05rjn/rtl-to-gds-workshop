@@ -1,0 +1,928 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue Apr 14 14:58:38 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+restoreDesign ./design/physicalcells_placed.enc.dat memory
+deleteAllPowerPreroutes
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 right Metal6 left Metal8} -width {top 1 bottom 1 left 1 right 1} -spacing {top 1 bottom 1 left 1 right 1} -offset {top 1 bottom 1 left 1 right 1}
+addStripe -nets {VDD VSS} -direction horizontal -layer Metal9 -width 1 -spacing 1 -set_to_set_distance 20 -start_from bottom -start_offset 5 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1
+addStripe -nets {VDD VSS} -direction vertical -layer Metal8 -width 1 -spacing 1 -set_to_set_distance 20 -start_from left -start_offset 6 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1
+setSrouteMode -viaConnectToShape stripe
+sroute -connect {blockPin corePin floatingStripe} -layerChangeRange {Metal1(1) Metal9(9)} -blockPinTarget nearestTarget -corePinTarget none -floatingStripeTarget {blockring ring stripe padring ringpin blockpin followpin} -allowJogging 1 -crossoverViaLayerRange {Metal1(1) Metal9(9)} -nets {VDD VSS} -allowlayerChange 1 -blockPin useLef -targetViaLayerRange {Metal1(1) Metal9(9)}
+zoomBox 7.10800 12.82150 71.62750 70.58000
+zoomBox 19.15650 25.82750 52.83600 55.97800
+zoomBox 21.63300 28.59850 50.26100 54.22650
+zoomBox 25.83600 32.57550 46.52000 51.09200
+zoomBox 27.48150 34.30550 45.06300 50.04450
+zoomBox 28.88000 35.77550 43.82450 49.15400
+zoomBox 24.61250 29.01250 53.24250 54.64250
+zoomBox 16.43800 16.05650 71.28550 65.15650
+zoomBox 5.69350 -0.97500 95.00400 78.97700
+zoomBox -23.82500 -47.73800 147.26750 105.42650
+zoomBox 15.97450 -12.89250 121.04750 81.17050
+zoomBox -10.13050 -34.03750 135.30050 96.15450
+selectWire 83.6000 3.1300 84.6000 82.3700 6 VDD
+dbSetStripBoxZ [uiGetRecordObjByInfo -objType sWire -rect {83.6 3.13 84.6 82.37} -layer 6 -name VDD] 8
+dbSetStripBoxState [uiGetRecordObjByInfo -objType sWire -rect {83.6 3.13 84.6 82.37} -layer 8 -name VDD] ROUTED
+deselectAll
+selectWire 85.6000 1.1300 86.6000 84.3700 6 VSS
+dbSetStripBoxZ [uiGetRecordObjByInfo -objType sWire -rect {85.6 1.13 86.6 84.37} -layer 6 -name VSS] 8
+dbSetStripBoxState [uiGetRecordObjByInfo -objType sWire -rect {85.6 1.13 86.6 84.37} -layer 8 -name VSS] ROUTED
+fit
+uiSetTool stretchWire
+deselectAll
+gui_select -next -point {103.3965 39.0805}
+fit
+selectWire 83.6000 3.1300 84.6000 82.3700 8 VDD
+uiSetTool select
+deselectAll
+zoomBox 24.29600 39.25850 110.61250 80.98950
+zoomBox -14.77500 15.45050 125.77800 83.40300
+zoomBox -31.97300 4.01050 133.38500 83.95500
+zoomBox -54.17050 -5.23700 140.36850 88.81550
+fit
+ui_view_box
+ui_view_box
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType inst
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType regular
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType special
+zoomBox -9.01550 33.97050 92.53300 83.06550
+zoomBox 21.22050 59.98550 59.52050 78.50200
+zoomBox 32.62400 69.79650 47.06950 76.78050
+zoomBox 36.92450 73.49700 42.37300 76.13100
+fit
+selectWire 1.0000 52.1300 86.6000 53.1300 9 VSS
+deselectWire 1.0000 52.1300 86.6000 53.1300 9 VSS
+deselectWire 1.0000 52.1300 86.6000 53.1300 9 VSS
+zoomBox 24.60050 29.96850 97.97000 65.44000
+zoomBox 51.98950 41.62650 84.54500 57.36600
+zoomBox 65.59600 47.41800 77.87550 53.35450
+zoomBox 69.50600 49.72600 74.95500 52.36050
+zoomBox 72.11850 50.77000 73.86650 51.61500
+zoomBox 71.90050 50.68300 73.95700 51.67700
+zoomBox 72.70800 51.00500 73.62100 51.44650
+zoomBox 73.10900 51.16500 73.45450 51.33200
+zoomBox 73.24400 51.21850 73.39800 51.29300
+zoomBox 73.01450 51.12700 73.49450 51.35900
+zoomBox 72.29350 50.83800 73.79500 51.56400
+zoomBox 71.88600 50.67550 73.96500 51.68050
+zoomBox 71.62700 50.57200 74.07300 51.75450
+zoomBox 70.96350 50.30700 74.34950 51.94400
+zoomBox 68.77300 49.43200 75.26050 52.56850
+zoomBox 67.01300 48.72900 75.99300 53.07050
+fit
+ui_view_box
+ui_view_box
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType inst
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType regular
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType special
+selectVia 53.0000 27.3000 54.0000 27.4200 4 VSS
+deselectVia 53.0000 27.3000 54.0000 27.4200 4 VSS
+deselectVia 53.0000 27.3000 54.0000 27.4200 4 VSS
+selectVia 51.0000 18.7500 52.0000 18.8700 6 VDD
+deselectVia 51.0000 18.7500 52.0000 18.8700 6 VDD
+deselectVia 51.0000 18.7500 52.0000 18.8700 6 VDD
+selectVia 51.0000 18.7500 52.0000 18.8700 4 VDD
+deselectVia 51.0000 18.7500 52.0000 18.8700 4 VDD
+deselectVia 51.0000 18.7500 52.0000 18.8700 4 VDD
+selectWire 5.0000 15.3300 82.6000 15.4500 1 VDD
+deselectWire 5.0000 15.3300 82.6000 15.4500 1 VDD
+deselectWire 5.0000 15.3300 82.6000 15.4500 1 VDD
+selectVia 53.0000 13.6200 54.0000 13.7400 7 VSS
+deselectVia 53.0000 13.6200 54.0000 13.7400 7 VSS
+deselectVia 53.0000 13.6200 54.0000 13.7400 7 VSS
+selectVia 53.0000 13.6200 54.0000 13.7400 5 VSS
+deselectVia 53.0000 13.6200 54.0000 13.7400 5 VSS
+deselectVia 53.0000 13.6200 54.0000 13.7400 5 VSS
+selectVia 53.0000 13.6200 54.0000 13.7400 4 VSS
+deselectVia 53.0000 13.6200 54.0000 13.7400 4 VSS
+deselectVia 53.0000 13.6200 54.0000 13.7400 4 VSS
+selectVia 53.0000 13.6200 54.0000 13.7400 3 VSS
+deselectVia 53.0000 13.6200 54.0000 13.7400 3 VSS
+deselectVia 53.0000 13.6200 54.0000 13.7400 3 VSS
+selectWire 5.0000 13.6200 82.6000 13.7400 1 VSS
+deselectWire 5.0000 13.6200 82.6000 13.7400 1 VSS
+deselectWire 5.0000 13.6200 82.6000 13.7400 1 VSS
+selectWire 5.0000 13.6200 82.6000 13.7400 1 VSS
+deselectWire 5.0000 13.6200 82.6000 13.7400 1 VSS
+deselectWire 5.0000 13.6200 82.6000 13.7400 1 VSS
+selectVia 53.0000 13.6200 54.0000 13.7400 2 VSS
+deselectVia 53.0000 13.6200 54.0000 13.7400 2 VSS
+deselectVia 53.0000 13.6200 54.0000 13.7400 2 VSS
+selectVia 53.0000 13.6200 54.0000 13.7400 7 VSS
+deselectVia 53.0000 13.6200 54.0000 13.7400 7 VSS
+deselectVia 53.0000 13.6200 54.0000 13.7400 7 VSS
+selectWire 53.0000 1.1300 54.0000 84.3700 8 VSS
+deselectWire 53.0000 1.1300 54.0000 84.3700 8 VSS
+deselectWire 53.0000 1.1300 54.0000 84.3700 8 VSS
+selectVia 51.0000 15.3300 52.0000 15.4500 4 VDD
+deselectVia 51.0000 15.3300 52.0000 15.4500 4 VDD
+deselectVia 51.0000 15.3300 52.0000 15.4500 4 VDD
+selectVia 53.0000 17.0400 54.0000 17.1600 2 VSS
+deselectVia 53.0000 17.0400 54.0000 17.1600 2 VSS
+deselectVia 53.0000 17.0400 54.0000 17.1600 2 VSS
+selectVia 53.0000 17.0400 54.0000 17.1600 4 VSS
+deselectVia 53.0000 17.0400 54.0000 17.1600 4 VSS
+deselectVia 53.0000 17.0400 54.0000 17.1600 4 VSS
+selectVia 53.0000 17.0400 54.0000 17.1600 2 VSS
+deselectVia 53.0000 17.0400 54.0000 17.1600 2 VSS
+deselectVia 53.0000 17.0400 54.0000 17.1600 2 VSS
+selectVia 53.0000 17.0400 54.0000 17.1600 2 VSS
+deselectVia 53.0000 17.0400 54.0000 17.1600 2 VSS
+deselectVia 53.0000 17.0400 54.0000 17.1600 2 VSS
+selectVia 53.0000 17.0400 54.0000 17.1600 4 VSS
+deselectVia 53.0000 17.0400 54.0000 17.1600 4 VSS
+deselectVia 53.0000 17.0400 54.0000 17.1600 4 VSS
+selectVia 53.0000 17.0400 54.0000 17.1600 2 VSS
+deselectVia 53.0000 17.0400 54.0000 17.1600 2 VSS
+deselectVia 53.0000 17.0400 54.0000 17.1600 2 VSS
+selectVia 53.0000 17.0400 54.0000 17.1600 4 VSS
+deselectVia 53.0000 17.0400 54.0000 17.1600 4 VSS
+deselectVia 53.0000 17.0400 54.0000 17.1600 4 VSS
+selectVia 53.0000 17.0400 54.0000 17.1600 5 VSS
+deselectVia 53.0000 17.0400 54.0000 17.1600 5 VSS
+deselectVia 53.0000 17.0400 54.0000 17.1600 5 VSS
+selectVia 53.0000 17.0400 54.0000 17.1600 6 VSS
+deselectVia 53.0000 17.0400 54.0000 17.1600 6 VSS
+deselectVia 53.0000 17.0400 54.0000 17.1600 6 VSS
+selectInst TAP_14
+ui_view_box
+ui_view_box
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType inst
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType regular
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType special
+selectInst TAP_14
+deselectInst TAP_14
+deselectInst TAP_14
+selectVia 85.6000 52.1300 86.6000 53.1300 7 VSS
+deselectVia 85.6000 52.1300 86.6000 53.1300 7 VSS
+deselectVia 85.6000 52.1300 86.6000 53.1300 7 VSS
+selectPhyPin 87.3500 52.8750 87.6000 52.9550 5 {rdata_o[1]}
+deselectPhyPin 87.3500 52.8750 87.6000 52.9550 5 {rdata_o[1]}
+deselectPhyPin 87.3500 52.8750 87.6000 52.9550 5 {rdata_o[1]}
+selectVia 73.0000 40.9800 74.0000 41.1000 8 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 8 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 8 VSS
+selectVia 73.0000 40.9800 74.0000 41.1000 7 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 7 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 7 VSS
+selectVia 73.0000 40.9800 74.0000 41.1000 6 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 6 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 6 VSS
+selectVia 73.0000 40.9800 74.0000 41.1000 6 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 6 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 6 VSS
+selectVia 73.0000 40.9800 74.0000 41.1000 8 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 8 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 8 VSS
+selectVia 73.0000 40.9800 74.0000 41.1000 7 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 7 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 7 VSS
+selectVia 73.0000 40.9800 74.0000 41.1000 6 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 6 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 6 VSS
+selectVia 73.0000 40.9800 74.0000 41.1000 5 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 5 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 5 VSS
+selectVia 73.0000 40.9800 74.0000 41.1000 4 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 4 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 4 VSS
+selectVia 73.0000 40.9800 74.0000 41.1000 3 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 3 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 3 VSS
+selectWire 5.0000 40.9800 82.6000 41.1000 1 VSS
+deselectWire 5.0000 40.9800 82.6000 41.1000 1 VSS
+deselectWire 5.0000 40.9800 82.6000 41.1000 1 VSS
+selectWire 5.0000 40.9800 82.6000 41.1000 1 VSS
+deselectWire 5.0000 40.9800 82.6000 41.1000 1 VSS
+deselectWire 5.0000 40.9800 82.6000 41.1000 1 VSS
+selectVia 73.0000 40.9800 74.0000 41.1000 3 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 3 VSS
+deselectVia 73.0000 40.9800 74.0000 41.1000 3 VSS
+selectWire 73.0000 1.1300 74.0000 84.3700 8 VSS
+ui_view_box
+ui_view_box
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType inst
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType regular
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType special
+selectWire 73.0000 1.1300 74.0000 84.3700 8 VSS
+ui_view_box
+ui_view_box
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType inst
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType regular
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType special
+selectWire 73.0000 1.1300 74.0000 84.3700 8 VSS
+ui_view_box
+ui_view_box
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType inst
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType regular
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType special
+selectWire 73.0000 1.1300 74.0000 84.3700 8 VSS
+deselectWire 73.0000 1.1300 74.0000 84.3700 8 VSS
+deselectWire 73.0000 1.1300 74.0000 84.3700 8 VSS
+selectWire 5.0000 73.4700 82.6000 73.5900 1 VDD
+deselectWire 5.0000 73.4700 82.6000 73.5900 1 VDD
+deselectWire 5.0000 73.4700 82.6000 73.5900 1 VDD
+zoomBox -15.68250 15.42900 124.86900 83.38050
+zoomBox 22.27850 35.22450 108.59550 76.95550
+zoomBox 55.88750 52.75150 94.18750 71.26800
+zoomBox 68.70100 59.43350 88.69400 69.09950
+zoomBox 76.37850 61.18000 86.81600 66.22600
+zoomBox 80.09550 63.31650 84.03300 65.22000
+zoomBox 80.43450 63.57550 83.78100 65.19350
+zoomBox 80.72200 63.79550 83.56700 65.17100
+zoomBox 80.96700 63.98250 83.38500 65.15150
+zoomBox 81.50200 64.39100 82.98750 65.10900
+zoomBox 81.73800 64.57150 82.81150 65.09050
+zoomBox 81.97500 64.75300 82.63500 65.07200
+zoomBox 82.12100 64.86450 82.52650 65.06050
+zoomBox 82.20650 64.91750 82.45600 65.03800
+zoomBox 82.25950 64.95000 82.41250 65.02400
+zoomBox 82.29900 64.97450 82.37900 65.01300
+zoomBox 82.32500 64.99100 82.35600 65.00600
+zoomBox 82.33550 64.99750 82.34600 65.00250
+zoomBox 82.33650 64.99850 82.34500 65.00250
+zoomBox 82.32200 64.98950 82.35600 65.00600
+zoomBox 82.24250 64.94050 82.42050 65.02650
+zoomBox 81.84300 64.69200 82.75000 65.13050
+zoomBox 80.51600 63.86500 83.84800 65.47600
+zoomBox 69.51700 57.01250 92.94750 68.34050
+zoomBox 78.22650 62.43950 85.73900 66.07150
+zoomBox 81.01800 64.17950 83.42800 65.34450
+zoomBox 81.97650 64.77600 82.63450 65.09400
+zoomBox 82.22000 64.92800 82.43200 65.03050
+zoomBox 82.29800 64.97650 82.36650 65.00950
+zoomBox 82.32200 64.99200 82.34500 65.00300
+zoomBox 82.32900 64.99600 82.33850 65.00050
+zoomBox 82.32950 64.99650 82.33800 65.00050
+zoomBox 82.30250 64.97950 82.35900 65.00700
+zoomBox 82.11250 64.86200 82.51450 65.05650
+zoomBox 81.21150 64.30150 83.25850 65.29100
+zoomBox 79.36200 63.14850 84.78950 65.77250
+zoomBox 80.16350 63.83500 81.90450 64.67650
+zoomBox 80.53500 64.08650 81.01100 64.31650
+zoomBox 80.62950 64.15100 80.78250 64.22500
+zoomBox 80.66200 64.17300 80.70450 64.19350
+zoomBox 80.66900 64.17750 80.68550 64.18550
+zoomBox 80.67100 64.17900 80.68000 64.18350
+zoomBox 80.66000 64.17200 80.70300 64.19300
+zoomBox 80.61450 64.14050 80.80800 64.23400
+zoomBox 80.42250 64.01150 81.26250 64.41750
+zoomBox 79.60000 63.45550 83.23000 65.21050
+zoomBox 75.23650 60.50650 93.67600 69.42150
+zoomBox 84.31100 64.96700 89.33650 67.39650
+zoomBox 86.39350 66.18050 87.76500 66.84350
+zoomBox 87.00650 66.41800 87.61650 66.71300
+zoomBox 87.31050 66.53600 87.54200 66.64800
+zoomBox 87.41250 66.57550 87.51700 66.62600
+zoomBox 87.46400 66.59500 87.50550 66.61500
+zoomBox 87.47450 66.60100 87.49450 66.61050
+zoomBox 87.47950 66.60350 87.48850 66.60800
+zoomBox 87.47950 66.60350 87.48800 66.60750
+zoomBox 87.45600 66.59000 87.51100 66.61650
+zoomBox 87.10000 66.38750 87.86750 66.75850
+zoomBox 83.75750 64.48450 91.22950 68.09700
+zoomBox 86.53400 65.99100 88.57250 66.97650
+zoomBox 87.31400 66.40450 87.87150 66.67400
+zoomBox 87.52750 66.51750 87.68000 66.59100
+zoomBox 87.58350 66.54850 87.63300 66.57250
+zoomBox 87.60050 66.55850 87.61700 66.56650
+zoomBox 87.57500 66.54350 87.63850 66.57400
+zoomBox 87.48150 66.49000 87.71500 66.60300
+zoomBox 87.55750 66.53250 87.68050 66.59200
+zoomBox 87.60400 66.55850 87.65900 66.58500
+zoomBox 87.62150 66.56800 87.65100 66.58250
+zoomBox 87.63150 66.57350 87.64550 66.58050
+zoomBox 87.59400 66.55300 87.66250 66.58600
+zoomBox 87.35500 66.41950 87.77300 66.62150
+zoomBox 85.93000 65.62250 88.43300 66.83250
+zoomBox 79.04750 61.73450 91.76550 67.88300
+zoomBox 56.42700 45.85350 121.03000 77.08650
+zoomBox -39.45000 -36.87850 346.60600 149.76550
+zoomBox -8.50800 13.43850 137.09350 83.83150
+fit
+zoomBox 10.66950 23.14400 73.03400 53.29500
+zoomBox 33.34500 30.27800 61.01800 43.65700
+zoomBox 45.63450 34.14500 54.50700 38.43450
+zoomBox 50.09000 35.54650 52.14650 36.54050
+zoomBox 50.60850 35.70950 51.87150 36.32000
+zoomBox 50.99050 35.80200 51.65000 36.12100
+zoomBox 51.18800 35.85050 51.53350 36.01750
+zoomBox 51.32350 35.88300 51.45500 35.94650
+zoomBox 51.37900 35.89600 51.42250 35.91700
+zoomBox 51.39600 35.90000 51.41250 35.90800
+zoomBox 51.40050 35.90100 51.41000 35.90550
+zoomBox 51.39850 35.90000 51.41200 35.90650
+zoomBox 51.39700 35.89950 51.41350 35.90750
+zoomBox 51.39550 35.89900 51.41500 35.90850
+zoomBox 51.39150 35.89800 51.41850 35.91100
+zoomBox 51.38600 35.89700 51.42350 35.91500
+zoomBox 51.36050 35.89100 51.44750 35.93300
+zoomBox 51.33150 35.88400 51.47400 35.95300
+fit
+verify_PG_short
+verify_drc
+verify_connectivity -allPGPinPort -net {VDD VSS} -error 200000
+deleteAllPowerPreroutes
+deleteFiller -prefix END
+deleteFiller -prefix TAP
+deletePlaceBlockage -all
+verify_connectivity -allPGPinPort -net {VDD VSS} -error 200000
+setEndCapMode -leftEdge FILL2 -rightEdge FILL2
+addEndCap -prefix ENDCAP
+addWellTap -checkerBoard -cell FILL2 -prefix TAP -fixedGap -cellInterval 45
+verifyWellTap -cell FILL2 -rule 45
+deleteAllPowerPreroutes
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 right Metal6 left Metal8} -width {top 1 bottom 1 left 1 right 1} -spacing {top 1 bottom 1 left 1 right 1} -offset {top 1 bottom 1 left 1 right 1}
+addStripe -nets {VDD VSS} -direction horizontal -layer Metal9 -width 1 -spacing 1 -set_to_set_distance 20 -start_from bottom -start_offset 5 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1
+addStripe -nets {VDD VSS} -direction vertical -layer Metal8 -width 1 -spacing 1 -set_to_set_distance 20 -start_from left -start_offset 6 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1
+setSrouteMode -viaConnectToShape stripe
+sroute -connect {blockPin corePin floatingStripe} -layerChangeRange {Metal1(1) Metal9(9)} -blockPinTarget nearestTarget -corePinTarget none -floatingStripeTarget {blockring ring stripe padring ringpin blockpin followpin} -allowJogging 1 -crossoverViaLayerRange {Metal1(1) Metal9(9)} -nets {VDD VSS} -allowlayerChange 1 -blockPin useLef -targetViaLayerRange {Metal1(1) Metal9(9)}
+verify_PG_short
+verify_drc
+verify_connectivity -allPGPinPort -net {VDD VSS} -error 200000
+saveDesign ./design/power_planning_done.enc
+setLayerPreference Metal8 -isVisible 0
+setLayerPreference Metal8 -isVisible 1
+setLayerPreference Metal8 -isVisible 0
+setLayerPreference Metal8 -isVisible 1
+setLayerPreference Via6 -isVisible 0
+setLayerPreference Via6 -isVisible 1
+setLayerPreference Metal7 -isVisible 0
+setLayerPreference Metal7 -isVisible 1
+setLayerPreference Metal7 -isVisible 0
+setLayerPreference Metal7 -isVisible 1
+setLayerPreference allM8 -isVisible 0
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM8 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM8 -isVisible 0
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM8 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM9 -isVisible 0
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM9 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM0 -isVisible 0
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM0 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM0 -isVisible 0
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM0 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM0 -isVisible 0
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM0 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM0 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM0 -isVisible 1
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM3 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM4 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM5 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM6 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM7 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM8 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM9 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM0 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM3 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM4 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM5 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM6 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM7 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM8 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM9 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM0 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+zoomBox -14.92550 38.71150 58.44400 74.18300
+zoomBox 0.93050 56.39650 24.45150 67.76800
+zoomBox 6.01300 62.06550 13.55450 65.71150
+zoomBox 7.64150 63.88300 10.06000 65.05250
+zoomBox 8.25800 64.46900 8.81950 64.74050
+zoomBox 8.38150 64.54000 8.59350 64.64250
+zoomBox 8.43150 64.56900 8.50000 64.60200
+zoomBox 8.44800 64.57800 8.46800 64.58750
+zoomBox 8.45150 64.58000 8.46100 64.58450
+zoomBox 8.42900 64.56700 8.50000 64.60150
+zoomBox 8.10700 64.38350 9.08050 64.85400
+zoomBox 4.48800 62.31650 15.65650 67.71600
+zoomBox -54.43850 28.71600 122.53600 114.27650
+fit
+checkDesign -floorplan
+checkFPlan -reportUtil
+fit
+viewLast
+fit
+fit
+fit
+fit
+fit

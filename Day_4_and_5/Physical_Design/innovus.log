@@ -1,0 +1,517 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	
+Date:		Mon Apr 13 17:17:52 2026
+Host:		cad51 (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (4cores*4cpus*Intel(R) Xeon(R) CPU E3-1220 v5 @ 3.00GHz 8192KB)
+OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+License:
+		[17:17:53.395713] Configured Lic search path (21.01-s002): 5280@CadenceServer
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> getVersion
+<CMD> getVersion
+[INFO] Loading PVS 22.20 fill procedures
+<CMD> win
+<CMD> save_global inputs/Default.globals
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file {../libs/lef/gsclib045_tech.lef ../libs/lef/gsclib045_hvt_macro.lef ../libs/lef/gsclib045_lvt_macro.lef ../libs/lef/gsclib045_macro.lef}
+<CMD> set init_verilog inputs/memory_netlist_dft.v
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+
+Loading LEF file ../libs/lef/gsclib045_tech.lef ...
+
+Loading LEF file ../libs/lef/gsclib045_hvt_macro.lef ...
+Set DBUPerIGU to M2 pitch 400.
+
+Loading LEF file ../libs/lef/gsclib045_lvt_macro.lef ...
+
+Loading LEF file ../libs/lef/gsclib045_macro.lef ...
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNALVT' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNAHVT' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+*** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=5.33min, fe_real=22.58min, fe_mem=1050.2M) ***
+#% Begin Load netlist data ... (date=04/13 17:40:27, mem=1046.7M)
+*** Begin netlist parsing (mem=1050.2M) ***
+Created 0 new cells from 0 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'inputs/memory_netlist_dft.v'
+
+*** Memory Usage v#1 (Current mem = 1053.234M, initial mem = 483.863M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1053.2M) ***
+#% End Load netlist data ... (date=04/13 17:40:28, total cpu=0:00:00.0, real=0:00:00.0, peak res=1052.8M, current mem=1052.8M)
+Top level cell is memory.
+Hooked 0 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell memory ...
+*** Netlist is unique.
+** info: there are 1560 modules.
+** info: there are 789 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1101.648M, initial mem = 483.863M) ***
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+**WARN: (IMPSYT-7328):	The design has been initialized in physical-only mode because the init_mmmc_file global variable was not defined. Timing analysis will not be possible within this session. You can only use commands that do not depend on timing data. If you need to use timing, you need to restart with an init_mmmc_file to define the timing setup, or you can save this design and use restoreDesign -mmmc_file <viewDef.tcl> to add the timing setup information.
+Extraction setup Started 
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200            3  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+*** Message Summary: 6 warning(s), 0 error(s)
+
+<CMD> zoomBox -32.98000 1.59250 95.99650 63.94800
+<CMD> zoomBox -9.81000 14.93850 57.51650 47.48850
+<CMD> zoomBox -6.01450 17.12450 51.21300 44.79200
+<CMD> zoomBox -2.78850 18.98250 45.85500 42.50000
+<CMD> zoomBox -0.04700 20.56200 41.30050 40.55200
+<CMD> zoomBox -6.01600 17.12350 51.21350 44.79200
+<CMD> zoomBox -9.81250 14.93700 57.51750 47.48850
+<CMD> zoomBox -14.27800 12.36500 64.93400 50.66100
+<CMD> zoomBox -25.71200 5.77850 83.92400 58.78350
+<CMD> zoomBox -32.98400 1.59000 96.00000 63.94900
+<CMD> zoomBox -41.53850 -3.33750 110.20750 70.02600
+<CMD> zoomBox -21.30100 -2.16000 57.91200 36.13650
+<CMD> zoomBox -17.98600 -1.96750 49.34550 30.58500
+<CMD> zoomBox -9.00650 -1.44500 26.14100 15.54750
+<CMD> zoomBox -4.31950 -1.17250 14.02850 7.69800
+<CMD> zoomBox -2.52650 -0.23400 4.39450 3.11200
+<CMD> zoomBox -1.75500 0.03200 1.85800 1.77900
+<CMD> zoomBox -1.59400 0.07350 1.47750 1.55850
+<CMD> zoomBox -1.77800 0.03200 1.83550 1.77900
+<CMD> zoomBox -2.25400 -0.08150 2.74750 2.33650
+<CMD> zoomBox -2.55500 -0.15350 3.32900 2.69100
+<CMD> zoomBox -1.59000 -0.12400 2.02400 1.62300
+<CMD> zoomBox -0.85650 -0.10150 1.03100 0.81100
+<CMD> zoomBox -0.54750 -0.09250 0.61300 0.46850
+<CMD> zoomBox -0.32000 -0.07650 0.28700 0.21700
+<CMD> zoomBox -0.20700 -0.06150 0.11050 0.09200
+<CMD> zoomBox -0.16600 -0.04350 0.02950 0.05100
+<CMD> zoomBox -0.15700 -0.03700 0.00950 0.04350
+<CMD> zoomBox -0.13300 -0.02300 -0.02950 0.02700
+<CMD> zoomBox -0.16800 -0.03900 0.00100 0.04250
+<CMD> zoomBox -0.14450 -0.02800 -0.02150 0.03150
+<CMD> zoomBox -0.17400 -0.04050 -0.00300 0.04200
+<CMD> zoomBox -0.19300 -0.04900 0.00800 0.04800
+<CMD> zoomBox -0.17450 -0.04050 -0.00400 0.04200
+<CMD> zoomBox -0.19150 -0.04950 0.00900 0.04750
+<CMD> zoomBox -0.17650 -0.04000 -0.00600 0.04250
+<CMD> zoomBox -0.19150 -0.04900 0.00900 0.04800
+<CMD> zoomBox -0.20850 -0.05850 0.02750 0.05550
+<CMD> zoomBox -0.19200 -0.05000 0.00850 0.04700
+<CMD> zoomBox -0.15400 -0.03050 -0.03050 0.02900
+<CMD> zoomBox -0.13350 -0.02350 -0.04450 0.01950
+<CMD> zoomBox -0.12550 -0.02050 -0.05000 0.01600
+<CMD> zoomBox -0.10500 -0.01300 -0.06450 0.00650
+<CMD> zoomBox -0.10150 -0.01150 -0.06700 0.00500
+<CMD> zoomBox -0.10900 -0.01450 -0.06150 0.00850
+<CMD> zoomBox -0.12800 -0.02150 -0.04850 0.01700
+<CMD> zoomBox -0.14700 -0.02800 -0.03650 0.02550
+<CMD> zoomBox -0.15900 -0.03200 -0.02850 0.03100
+<CMD> zoomBox -0.17300 -0.03700 -0.01900 0.03750
+<CMD> zoomBox -0.18900 -0.04250 -0.00800 0.04500
+<CMD> zoomBox -0.23050 -0.05800 0.02050 0.06350
+<CMD> zoomBox -0.25750 -0.06750 0.03850 0.07550
+<CMD> zoomBox -0.23100 -0.05800 0.02050 0.06350
+<CMD> zoomBox -0.20950 -0.05000 0.00450 0.05350
+<CMD> zoomBox -0.19100 -0.04300 -0.00900 0.04500
+<CMD> zoomBox -0.20950 -0.05000 0.00450 0.05350
+<CMD> zoomBox -0.18850 -0.04250 -0.00650 0.04550
+<CMD> zoomBox -0.20650 -0.04950 0.00750 0.05400
+<CMD> zoomBox -0.27900 -0.08300 0.07050 0.08600
+<CMD> zoomBox -0.67750 -0.26750 0.41400 0.26000
+<CMD> zoomBox -1.41250 -0.60850 1.05100 0.58250
+<CMD> zoomBox -3.06850 -1.37650 2.48650 1.30900
+<CMD> zoomBox -4.93900 -2.24400 4.10700 2.12950
+<CMD> zoomBox -9.54700 -4.48050 7.78300 3.89800
+<CMD> zoomBox -19.59400 -9.71800 13.60550 6.33300
+<CMD> zoomBox -45.95150 -23.45950 28.87400 12.71600
+<CMD> zoomBox -124.19800 -64.25450 74.20150 31.66450
+<CMD> zoomBox -361.81000 -168.87500 164.24200 85.45200
+<CMD> zoomBox -705.08300 -320.14100 302.66900 167.07050
+<CMD> zoomBox -395.25250 -184.04950 223.63300 115.15900
+<CMD> zoomBox -122.18750 -55.48700 152.41650 77.27400
+<CMD> zoomBox -38.14400 -15.91850 130.49750 65.61350
+<CMD> zoomBox -54.93000 -26.65600 143.47200 69.26400
+<CMD> zoomBox -71.96250 -39.01500 161.45200 73.83250
+<CMD> zoomBox -57.35150 -24.61450 141.05100 71.30600
+<CMD> zoomBox -31.86000 1.40700 111.48650 70.71000
+<CMD> zoomBox -43.57350 -10.54900 125.07000 70.98400
+<CMD> gui_select -rect {18.08350 37.51900 48.70900 1.92450}
+<CMD> checkDesign -physicalLibrary -outfile ./reports/check_lef.txt -noHtml
+**WARN: (IMPREPO-205):	There are 2 Cells with missing PG PIN.
+**WARN: (IMPREPO-207):	There are 1 Cells dimensions not multiple integer of site.
+Design check done.
+
+
+---
+--- Please refer to file ./reports/check_lef.txt for detailed report.
+---
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPREPO-205          1  There are %d Cells with missing PG PIN.  
+WARNING   IMPREPO-207          1  There are %d Cells dimensions not multip...
+*** Message Summary: 2 warning(s), 0 error(s)
+
+<CMD> checkDesign -timingLibrary
+Creating directory checkDesign.
+**WARN: (IMPREPO-211):	There are 19 Cells with missing Timing data.
+Design check done.
+Report saved in file checkDesign/memory.main.htm.ascii
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPREPO-211          1  There are %d Cells with missing Timing d...
+*** Message Summary: 1 warning(s), 0 error(s)
+
+<CMD> checkDesign -netlist -outfile ./reports/netlist_check.txt -nohtml
+############################################################################
+# Innovus Netlist Design Rule Check
+# Mon Apr 13 18:36:19 2026
+############################################################################
+Design: memory
+
+------ Design Summary:
+Total Standard Cell Number   (cells) : 789
+Total Block Cell Number      (cells) : 0
+Total I/O Pad Cell Number    (cells) : 0
+Total Standard Cell Area     ( um^2) : 3205.57
+Total Block Cell Area        ( um^2) : 0.00
+Total I/O Pad Cell Area      ( um^2) : 0.00
+
+------ Design Statistics:
+
+Number of Instances            : 789
+Number of Non-uniquified Insts : 784
+Number of Nets                 : 828
+Average number of Pins per Net : 4.63
+Maximum number of Pins in Net  : 274
+
+------ I/O Port summary
+
+Number of Primary I/O Ports    : 54
+Number of Input Ports          : 31
+Number of Output Ports         : 23
+Number of Bidirectional Ports  : 0
+Number of Power/Ground Ports   : 0
+Number of Floating Ports                     *: 0
+Number of Ports Connected to Multiple Pads   *: 0
+Number of Ports Connected to Core Instances   : 54
+**WARN: (IMPREPO-202):	There are 54 Ports connected to core instances.
+
+------ Design Rule Checking:
+
+Number of Output Pins connect to Power/Ground *: 0
+Number of Insts with Input Pins tied together ?: 0
+Number of TieHi/Lo term nets not connected to instance's PG terms ?: 0
+Number of Input/InOut Floating Pins            : 0
+Number of Output Floating Pins                 : 0
+Number of Output Term Marked TieHi/Lo         *: 0
+
+Number of nets with tri-state drivers          : 0
+Number of nets with parallel drivers           : 0
+Number of nets with multiple drivers           : 0
+Number of nets with no driver (No FanIn)       : 0
+Number of Output Floating nets (No FanOut)     : 5
+Number of High Fanout nets (>50)               : 2
+**WARN: (IMPREPO-227):	There are 2 High Fanout nets (>50).
+Design check done.
+
+
+---
+--- Please refer to file ./reports/netlist_check.txt for detailed report.
+---
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPREPO-227          1  There are %d High Fanout nets (>50).     
+WARNING   IMPREPO-202          1  There are %d Ports connected to core ins...
+*** Message Summary: 2 warning(s), 0 error(s)
+
+<CMD> check_timing -view func_ff
+**ERROR: (TCLCMD-996):	`func_ff` is invalid view name.
+
+<CMD> floorPlan -site CoreSite -r {1 0.55 5 5 5 5} -coreMarginsBy io
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> zoomBox -61.32650 -16.50850 137.07850 79.41300
+<CMD> zoomBox -82.19100 -23.51950 151.22700 89.32950
+<CMD> uiSetTool ruler
+<CMD> zoomBox -55.19950 -2.40900 113.44600 79.12500
+<CMD> zoomBox -30.86050 19.03500 72.71000 69.10750
+<CMD> zoomBox -21.40800 28.62650 53.42300 64.80450
+<CMD> zoomBox -14.49700 35.70650 39.56900 61.84550
+<CMD> zoomBox -17.66400 32.45350 45.94300 63.20500
+<CMD> zoomBox -21.39000 28.62600 53.44200 64.80450
+<CMD> zoomBox -36.99800 12.59400 84.85500 71.50550
+<CMD> zoomBox -52.53300 -3.36300 116.12200 78.17550
+<CMD> zoomBox -70.51950 -13.61800 127.89800 82.30950
+<CMD> zoomBox -119.14450 -43.88850 155.48200 88.88350
+<CMD> zoomBox -44.20650 4.66850 124.44850 86.20700
+<CMD> zoomBox -11.11000 26.11350 110.74300 85.02500
+<CMD> zoomBox 22.13950 47.65800 96.97350 83.83750
+<CMD> zoomBox 39.25900 56.76100 93.32750 82.90100
+<CMD> zoomBox 45.93050 60.31550 91.88900 82.53500
+<CMD> zoomBox 40.38450 56.83800 94.45500 82.97900
+<CMD> zoomBox 33.86050 52.74650 97.47300 83.50100
+<CMD> zoomBox 26.44100 47.82550 101.28000 84.00750
+<CMD> zoomBox 18.21300 41.80550 106.26000 84.37300
+<CMD> zoomBox -17.51800 5.44450 151.15350 86.99100
+<CMD> zoomBox 9.40800 36.40200 112.99400 86.48200
+<CMD> zoomBox 33.24700 63.81050 79.20950 86.03150
+<CMD> zoomBox 42.33600 74.26000 66.32850 85.85950
+<CMD> zoomBox 47.08050 79.71500 59.60450 85.77000
+<CMD> zoomBox 34.90050 75.63650 68.11000 91.69200
+<CMD> zoomBox 16.90700 69.63850 80.52650 100.39600
+<CMD> zoomBox 10.54500 69.63850 74.16450 100.39600
+<CMD> zoomBox 4.18300 69.63850 67.80250 100.39600
+<CMD> zoomBox -1.89950 67.65350 72.94700 103.83900
+<CMD> zoomBox -17.47450 62.57150 86.11900 112.65500
+<CMD> zoomBox -38.19350 62.57150 65.40000 112.65500
+<CMD> zoomBox -48.55300 62.57150 55.04050 112.65500
+<CMD> zoomBox -38.19350 62.57150 65.40000 112.65500
+<CMD> zoomBox -27.83400 62.57150 75.75950 112.65500
+<CMD> zoomBox -17.47450 62.57150 86.11900 112.65500
+<CMD> zoomBox 13.60400 62.57150 117.19750 112.65500
+<CMD> zoomBox -7.11500 62.57150 96.47850 112.65500
+<CMD> zoomBox -16.34900 59.35050 105.52550 118.27250
+<CMD> zoomBox -55.03000 45.85800 143.42300 141.80300
+<CMD> zoomBox -118.01550 23.88800 205.13300 180.11850
+<CMD> zoomBox -180.70850 2.02000 266.55700 218.25650
+<CMD> zoomBox -220.57650 -11.88650 305.61800 242.50950
+<CMD> zoomBox -267.48050 -28.24700 351.57250 271.04250
+<CMD> zoomBox -103.68050 0.53700 170.99800 133.33400
+<CMD> zoomBox -67.42550 6.90750 131.03000 102.85350
+<CMD> zoomBox -111.42000 -31.78400 211.73250 124.44850
+<CMD> zoomBox -80.35600 -21.74550 153.12200 91.13250
+<CMD> zoomBox -50.12650 -13.89050 93.25850 55.43100
+<CMD> zoomBox -31.56300 -8.76700 56.49450 33.80550
+<CMD> zoomBox -41.24350 -10.55200 62.35350 39.53350
+<CMD> zoomBox -52.61100 -12.67350 69.26800 46.25050
+<CMD> zoomBox -66.07450 -15.44150 77.31250 53.88100
+<CMD> zoomBox -81.85300 -18.69750 86.83750 62.85800
+<CMD> zoomBox -101.31100 -22.58200 97.14850 73.36600
+<CMD> zoomBox -42.00000 -11.53050 79.88000 47.39400
+<CMD> zoomBox -27.84100 -8.89200 75.75750 41.19400
+<CMD> zoomBox -5.88650 -5.19250 68.96400 30.99500
+<CMD> zoomBox 2.68800 -3.74750 66.31050 27.01150
+<CMD> zoomBox -15.73900 -5.93750 72.32050 36.63600
+<CMD> zoomBox -27.45700 -7.33000 76.14250 42.75650
+<CMD> zoomBox -122.80500 -24.64900 151.88900 108.15550
+<CMD> zoomBox -26.50650 9.99250 95.37750 68.91900
+<CMD> zoomBox 5.54800 23.68950 69.17300 54.45000
+<CMD> zoomBox 15.26200 27.84100 61.23150 50.06550
+<CMD> zoomBox 2.11400 20.66800 76.96750 56.85700
+<CMD> zoomBox -3.78000 17.40300 84.28300 59.97850
+<CMD> zoomBox -6.66800 13.59000 96.93600 63.67900
+<CMD> zoomBox 27.78000 23.73450 91.40650 54.49550
+<CMD> zoomBox 35.99850 26.15600 90.08100 52.30300
+<CMD> zoomBox 42.98350 28.21450 88.95400 50.43950
+<CMD> zoomBox 37.60850 24.62450 101.23550 55.38600
+<CMD> zoomBox 35.98100 22.13300 110.83650 58.32300
+<CMD> zoomBox 34.37600 19.22550 122.44150 61.80200
+<CMD> zoomBox 33.10500 15.74900 136.71150 65.83900
+<CMD> zoomBox 31.97250 11.68100 153.86250 70.61050
+<CMD> zoomBox 30.63950 6.89500 174.04000 76.22400
+<CMD> zoomBox 29.17850 1.26450 197.88500 82.82800
+<CMD> zoomBox 27.47800 -5.35950 225.95600 90.59750
+<CMD> zoomBox 25.54050 -13.15250 259.04400 99.73800
+<CMD> zoomBox 20.75750 -21.85000 295.46800 110.96250
+<CMD> zoomBox 18.48350 -32.16950 341.67250 124.08050
+<CMD> zoomBox 10.79050 -75.39650 537.04950 179.03050
+<CMD> zoomBox -1.50900 -214.25950 1184.54650 359.15500
+<CMD> zoomBox -18.49950 -525.43350 2654.57350 766.90000
+<CMD> zoomBox -46.46500 -1037.63950 5074.30400 1438.06600
+<CMD> zoomBox -34.69100 -546.04050 2638.38350 746.29400
+<CMD> zoomBox -27.53900 -247.38600 1158.51900 326.03000
+<CMD> zoomBox -8.78850 -64.11800 371.43600 119.70650
+<CMD> zoomBox -2.23800 -10.14600 141.16400 59.18350
+<CMD> zoomBox -10.94200 -17.43500 157.76600 64.12900
+<CMD> zoomBox -17.13700 -26.10000 181.34350 69.85800
+<CMD> zoomBox -28.38800 -48.86600 246.32650 83.94850
+<CMD> zoomBox -35.12250 -63.47100 288.07150 92.78150
+<CMD> zoomBox -132.08100 -63.47100 191.11300 92.78150
+<CMD> zoomBox -164.40050 -63.47100 158.79350 92.78150
+<CMD> zoomBox -132.08100 -63.47100 191.11300 92.78150
+<CMD> zoomBox -109.02200 -57.78650 165.69300 75.02800
+<CMD> zoomBox -132.08100 -63.47100 191.11300 92.78150
+<CMD> zoomBox -159.20900 -70.15850 221.01900 113.66800
+<CMD> zoomBox -132.08150 -63.47100 191.11350 92.78200
+<CMD> zoomBox -109.02250 -57.78650 165.69300 75.02850
+<CMD> zoomBox -132.08200 -63.47100 191.11300 92.78200
+<CMD> zoomBox -159.21000 -70.15850 221.01900 113.66850
+<CMD> zoomBox -132.11650 -63.47100 191.07850 92.78200
+<CMD> zoomBox -132.11650 -32.22000 191.07850 124.03300
+<CMD> zoomBox -132.11650 -47.84550 191.07850 108.40750
+<CMD> zoomBox -132.11650 -63.47100 191.07850 92.78200
+<CMD> zoomBox -132.11650 -47.84550 191.07850 108.40750
+<CMD> zoomBox -132.11650 -32.22000 191.07850 124.03300
+<CMD> zoomBox -132.11650 -16.59450 191.07850 139.65850
+<CMD> zoomBox -35.15800 -16.59450 288.03700 139.65850
+<CMD> zoomBox -99.79700 -16.59450 223.39800 139.65850
+<CMD> zoomBox -158.76600 -31.15000 288.56250 185.11700
+<CMD> zoomBox -196.26650 -40.40650 330.00250 214.02550
+<CMD> zoomBox -126.89200 -23.28250 253.33850 160.54500
+<CMD> zoomBox -99.79800 -16.59500 223.39800 139.65850
+<CMD> zoomBox -76.76800 -10.91050 197.94850 121.90500
+<CMD> zoomBox -61.77650 -5.68200 171.73250 107.21100
+<CMD> zoomBox -30.50000 27.80900 91.39350 86.74000
+<CMD> zoomBox -21.02150 37.95850 67.04650 80.53600
+<CMD> zoomBox -17.32000 41.92200 57.53800 78.11300
+<CMD> zoomBox -27.72900 34.71500 75.88150 84.80700
+<CMD> zoomBox -34.42500 30.81150 87.47000 89.74350
+<CMD> zoomBox -22.23600 30.81150 99.65950 89.74350
+<CMD> zoomBox -10.04650 30.81150 111.84900 89.74350
+<CMD> zoomBox 2.14300 30.81150 124.03850 89.74350
+<CMD> zoomBox -10.04650 30.81150 111.84900 89.74350
+<CMD> zoomBox -10.04650 24.91850 111.84900 83.85050
+<CMD> zoomBox -10.04650 13.13250 111.84900 72.06450
+<CMD> zoomBox -10.04650 -4.54650 111.84900 54.38550
+<CMD> zoomBox -18.79100 -6.26700 124.61600 63.06500
+<CMD> zoomBox -29.06350 -8.27600 139.65150 73.29150
+<CMD> zoomBox -40.98700 -10.63900 157.50100 85.32250
+<CMD> zoomBox -55.01450 -13.39850 178.50050 99.49750
+<CMD> zoomBox -78.36600 -13.39850 155.14900 99.49750
+<CMD> zoomBox -101.71750 -13.39850 131.79750 99.49750
+<CMD> zoomBox -78.36600 -13.39850 155.14900 99.49750
+<CMD> zoomBox -78.36600 -24.68800 155.14900 88.20800
+<CMD> zoomBox -78.36600 -35.97750 155.14900 76.91850
+<CMD> zoomBox -78.36600 9.18050 155.14900 122.07650
+<CMD> zoomBox -78.36600 -2.10900 155.14900 110.78700
+<CMD> zoomBox -78.36600 -13.39850 155.14900 99.49750
+<CMD> zoomBox -65.45450 -12.87200 133.03300 83.08950
+<CMD> zoomBox -78.36600 -13.39850 155.14900 99.49750
+<CMD> zoomBox -37.33200 22.62950 84.56500 81.56250
+<CMD> zoomBox -24.27400 33.12550 63.79700 75.70450
+<CMD> zoomBox -37.45450 22.08050 84.44300 81.01350
+<CMD> zoomBox -46.45750 13.97000 96.95150 83.30300
+<CMD> zoomBox -57.70350 3.10400 111.01300 84.67250
+<CMD> zoomBox -13.85300 46.50450 61.00900 82.69750
+<CMD> zoomBox -1.55500 59.25450 44.42000 81.48150
+<CMD> zoomBox 4.13000 64.50200 37.34650 80.56100
+<CMD> zoomBox 2.42000 62.01350 41.49850 80.90650
+<CMD> zoomBox 0.76950 59.63300 46.74450 81.86000
+<CMD> zoomBox -0.93800 56.96450 53.15000 83.11400
+<CMD> zoomBox -4.54300 50.29750 70.31900 86.49050
+<CMD> zoomBox -6.47350 46.25400 81.59950 88.83400
+<CMD> zoomBox -8.74450 41.49700 94.87050 91.59100
+<CMD> zoomBox -12.90850 25.00850 130.50350 94.34300
+<CMD> zoomBox -15.52600 15.16200 153.19400 96.73200
+<CMD> zoomBox -22.26800 -1.00300 211.25550 111.89700
+<CMD> zoomBox -12.84000 -7.63350 130.57300 61.70150
+<CMD> zoomBox -6.78500 -4.60550 81.29000 37.97550
+<CMD> zoomBox -5.33950 -3.88250 69.52450 32.31150
+<CMD> zoomBox -4.11050 -3.26800 59.52400 27.49700
+<CMD> zoomBox -0.23750 -1.33200 27.99850 12.31900
+<CMD> zoomBox 0.95450 -0.73600 18.29500 7.64750
+<CMD> zoomBox -0.08300 -1.41700 23.91800 10.18650
+<CMD> zoomBox -0.74250 -1.85050 27.49400 11.80100
+<CMD> zoomBox -1.51300 -2.36000 31.70700 13.70050
+<CMD> zoomBox -3.44650 -3.66450 42.53300 18.56500
+<CMD> zoomBox -5.45700 -4.80150 48.63700 21.35100
+<CMD> zoomBox -7.71300 -6.12750 55.92700 24.64000
+<CMD> zoomBox -10.05650 -8.26150 64.81400 27.93550
+<CMD> zoomBox -12.72600 -10.89950 75.35700 31.68550
+<CMD> zoomBox -30.34300 -10.89950 57.74000 31.68550
+<CMD> zoomBox -21.53450 -10.89950 66.54850 31.68550
+<CMD> zoomBox -21.53450 14.65150 66.54850 57.23650
+<CMD> zoomBox -21.53450 35.94400 66.54850 78.52900
+<CMD> zoomBox -21.53450 48.71950 66.54850 91.30450
+<CMD> zoomBox -21.53450 31.68550 66.54850 74.27050
+<CMD> zoomBox -21.53450 14.65150 66.54850 57.23650
+<CMD> zoomBox -21.53450 1.87600 66.54850 44.46100
+<CMD> zoomBox -21.53450 -15.15800 66.54850 27.42700
+<CMD> zoomBox -21.53450 -19.41650 66.54850 23.16850
+<CMD> zoomBox -11.77600 -14.14000 51.86500 16.62800
+<CMD> zoomBox -27.74200 -22.77250 75.88650 27.32800
+<CMD> zoomBox -75.78000 -51.83600 157.77300 61.07850
+<CMD> zoomBox -122.49150 -51.83600 111.06200 61.07850
+<CMD> zoomBox -99.13600 -51.83600 134.41750 61.07850
+<CMD> zoomBox -99.13600 -17.96150 134.41750 94.95300
+<CMD> zoomBox -99.13600 -6.67000 134.41750 106.24450
+<CMD> zoomBox -9.45100 36.29300 112.46600 95.23550
+<CMD> zoomBox 36.97950 58.65000 100.62150 89.41850
+<CMD> zoomBox 28.49000 54.90850 103.36350 91.10700
+<CMD> zoomBox 18.50300 50.50700 106.58950 93.09350
+<CMD> zoomBox 6.75300 45.32850 110.38450 95.43050
+<CMD> zoomBox -7.07000 39.23600 114.84950 98.17950
+<CMD> zoomBox -23.35850 32.57300 120.07650 101.91850
+<CMD> zoomBox -42.52150 24.73450 126.22550 106.31750
+<CMD> zoomBox -65.06600 15.51250 133.46000 111.49250
+<CMD> zoomBox -91.58950 4.66300 141.97100 117.58100
+<CMD> zoomBox -122.79300 -8.10100 151.98400 124.74350
+<CMD> zoomBox -38.12850 -3.91550 105.30750 65.43050
+<CMD> zoomBox 13.30650 -1.37300 76.95050 29.39650
+<CMD> zoomBox 32.91650 -0.40350 66.13950 15.65850
+<CMD> zoomBox 18.08650 -2.25350 72.18450 23.90100
+<CMD> zoomBox 3.39950 -4.10250 78.27600 32.09750
+<CMD> zoomBox -8.77000 -9.57750 94.86650 40.52700
+<CMD> zoomBox -14.84100 -13.60250 107.08450 45.34400
+<CMD> zoomBox -33.65350 -18.01450 109.78850 51.33450
+<CMD> zoomBox -55.86200 -22.80950 112.89400 58.77800
+<CMD> zoomBox -17.47600 -2.43100 57.40300 33.77050
+<CMD> zoomBox -63.09100 -25.23850 105.67000 56.35150
+<CMD> zoomBox -114.61300 -50.93550 160.18750 81.92050
+<CMD> zoomBox -141.12000 -67.11950 182.17450 89.18150
+<CMD> zoomBox -99.68850 -44.51600 133.89150 68.41150
+<CMD> zoomBox -69.75550 -28.18500 99.00700 53.40550
+<CMD> zoomBox -39.68150 -11.77750 63.96000 38.32950
+<CMD> zoomBox -50.04550 -11.77750 53.59600 38.32950
+<CMD> zoomBox -60.40950 -11.77750 43.23200 38.32950
+<CMD> zoomBox -8.58950 -11.77750 95.05200 38.32950
+<CMD> zoomBox 1.77450 -11.77750 105.41600 38.32950
+<CMD> zoomBox -67.15200 -57.75700 207.65150 75.10050
+<CMD> zoomBox -84.96950 -74.05800 238.32900 82.24500
+<CMD> zoomBox -105.89700 -93.23600 274.45450 90.65000
+<CMD> zoomBox -140.00250 -120.80300 307.47000 95.53350
+<CMD> zoomBox -111.70900 -93.15550 268.64250 90.73050
+<CMD> zoomBox -258.51950 -236.61550 470.11400 115.65250
+<CMD> zoomBox -140.00250 -120.80350 307.47000 95.53300
+<CMD> zoomBox -111.70900 -93.15600 268.64250 90.73000
+<CMD> zoomBox -140.00250 -120.80350 307.47000 95.53300
+<CMD> zoomBox -68.74950 -27.17150 164.83450 85.75800
+<CMD> zoomBox -56.76200 -11.60200 141.78500 84.38850
+<CMD> zoomBox -73.15450 -23.63250 160.43100 89.29750
+<CMD> zoomBox -73.15450 -12.33950 160.43100 100.59050
+<CMD> zoomBox -9.49350 55.92050 54.15750 86.69350
+<CMD> zoomBox 7.85250 74.52050 25.19800 82.90650
+<CMD> zoomBox -4.08600 62.78150 50.02350 88.94150
+<CMD> zoomBox -33.97100 37.82600 109.50150 107.18950
+<CMD> zoomBox -136.73150 -44.27250 310.81500 172.10000
+<CMD> zoomBox -175.67500 -59.80250 350.85050 194.75350
+<CMD> zoomBox -114.43650 -31.77500 265.97800 152.14150
+
+*** Memory Usage v#1 (Current mem = 1367.617M, initial mem = 483.863M) ***
+*** Message Summary: 14 warning(s), 1 error(s)
+
+--- Ending "Innovus" (totcpu=0:28:55, real=2:46:35, mem=1367.6M) ---

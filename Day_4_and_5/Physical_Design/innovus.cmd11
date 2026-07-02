@@ -1,0 +1,897 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue Apr 14 15:58:49 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+restoreDesign ./design/power_planning_done.enc.dat memory
+setLayerPreference trackObj -isVisible 1
+checkDesign -floorplan
+checkFPlan -reportUtil
+man floorplan
+man floorplan
+all_constraint_modes -active
+all_constraint_modes -active
+set_interactive_constraint_modes [all_constraint_modes -active]
+set_max_fanout 12 [dbGet top.name]
+setDesignMode -topRoutingLayer 7
+setDesignMode -bottomRoutingLayer 1
+set_analysis_view -setup func_worst -hold func_best
+set_analysis_view -setup func_ff -hold func_ff
+setPlaceMode -place_design_refine_place false
+place_design -noPrePlaceOpt
+defIn ./inputs/memory_scanDEF.scandef
+place_design -noPrePlaceOpt
+fit
+place_design
+fit
+checkPlace
+refinePlace
+setLayerPreference node_layer -isVisible 0
+setLayerPreference node_layer -isVisible 1
+setLayerPreference node_layer -isVisible 0
+zoomBox 22.19550 26.56150 84.55900 56.71200
+zoomBox 44.43100 35.62400 67.95200 46.99550
+zoomBox -22.57100 8.31600 117.99100 76.27250
+zoomBox -96.25300 -21.71400 173.02000 108.46950
+fit
+setLayerPreference node_layer -isVisible 1
+setLayerPreference node_layer -isVisible 0
+setLayerPreference node_route -isVisible 0
+setLayerPreference node_route -isVisible 1
+setLayerPreference node_route -isVisible 0
+setLayerPreference node_route -isVisible 1
+setLayerPreference node_layer -isVisible 1
+fit
+viewLast
+viewLast
+fit
+viewLast
+fit
+viewLast
+fit
+viewLast
+fit
+viewLast
+fit
+zoomBox -17.86200 22.66750 44.50200 52.81800
+zoomBox -3.33450 31.21600 20.18650 42.58750
+zoomBox 4.94600 35.34750 13.81750 39.63650
+zoomBox 7.96850 36.88800 11.31500 38.50600
+zoomBox 8.82100 37.44450 10.08400 38.05500
+zoomBox 9.27400 37.69500 9.75100 37.92550
+zoomBox 9.45950 37.79800 9.61350 37.87250
+zoomBox 9.51400 37.82800 9.57300 37.85650
+zoomBox 9.53700 37.84050 9.55650 37.85000
+zoomBox 9.54250 37.84350 9.55200 37.84800
+zoomBox 9.51500 37.82950 9.57000 37.85600
+zoomBox 9.42950 37.78200 9.63250 37.88000
+zoomBox 9.11500 37.60750 9.86400 37.96950
+fit
+checkPlace
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM3 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM4 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM5 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM6 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM7 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM8 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM9 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM0 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM0 -isVisible 1
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM0 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM0 -isVisible 1
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM3 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM4 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM4 -isVisible 0
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM4 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM5 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM6 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM7 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM8 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM9 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference node_layer -isVisible 0
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 0
+setLayerPreference allM12Cont -isVisible 0
+setLayerPreference allM8 -isVisible 1
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 0
+setLayerPreference allM12Cont -isVisible 0
+setLayerPreference allM9 -isVisible 1
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM5Cont -isVisible 0
+setLayerPreference allM6Cont -isVisible 0
+setLayerPreference allM7Cont -isVisible 0
+setLayerPreference allM8Cont -isVisible 0
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM11Cont -isVisible 0
+setLayerPreference allM12Cont -isVisible 0
+zoomBox -15.55750 12.55500 85.99100 61.65000
+zoomBox -2.26950 19.67050 60.09500 49.82150
+zoomBox -10.39300 15.32050 75.92450 57.05200
+zoomBox -21.63700 9.29950 97.83400 67.05950
+fit
+setLayerPreference node_layer -isVisible 1
+setLayerPreference node_layer -isVisible 0
+setLayerPreference node_layer -isVisible 1
+fit
+viewLast
+fit
+viewLast
+viewLast
+viewLast
+fit
+viewLast
+viewLast
+viewLast
+viewLast
+viewLast
+viewLast
+fit
+fit
+fit
+viewLast
+viewLast
+viewLast
+fit
+viewLast
+fit
+viewLast
+uiSetTool stretchWire
+uiSetTool stretchWire
+uiSetTool stretchWire
+uiSetTool stretchWire
+uiSetTool stretchWire
+zoomBox 7.90950 36.89400 11.14600 38.45850
+zoomBox 6.92550 36.31250 12.19700 38.86100
+zoomBox 5.94700 35.73400 13.24300 39.26150
+zoomBox 3.93800 34.51800 15.81900 40.26200
+zoomBox 7.78700 36.79100 12.26800 38.95750
+zoomBox 9.37150 37.76050 10.59400 38.35150
+zoomBox 9.69250 37.95500 10.15400 38.17800
+zoomBox 9.80250 38.02650 10.00850 38.12600
+zoomBox 9.85100 38.05950 9.95850 38.11150
+zoomBox 9.87950 38.07950 9.92800 38.10300
+zoomBox 9.89250 38.08900 9.91450 38.09950
+zoomBox 9.89800 38.09250 9.90750 38.09700
+zoomBox 9.89850 38.09300 9.90700 38.09700
+viewLast
+fit
+checkPlace
+refinePlace
+fit
+viewLast
+zoomBox 3.65350 32.08150 77.02400 67.55350
+zoomBox 17.00050 40.57650 62.05950 62.36100
+zoomBox 25.19700 45.79400 52.86950 59.17250
+zoomBox 3.65250 32.08100 77.02450 67.55350
+zoomBox -9.63350 23.62450 91.92000 72.72200
+fit
+zoomBox -16.00900 0.99250 70.30900 42.72400
+zoomBox -1.42150 3.02600 43.63900 24.81100
+zoomBox -5.29450 2.11250 47.71800 27.74200
+zoomBox -9.85100 1.03800 52.51650 31.19050
+zoomBox -15.21150 -0.22600 58.16200 35.24750
+zoomBox -21.51850 -1.71300 64.80350 40.02050
+fit
+zoomBox 13.83350 31.75500 115.38100 80.84950
+fit
+selectWire 5.0000 49.5300 82.6000 49.6500 1 VDD
+deselectAll
+selectInst {mem_reg[0][7]}
+zoomBox -1.60350 31.90550 84.71300 73.63650
+zoomBox 14.53850 40.87800 67.54850 66.50650
+zoomBox 26.81950 47.70400 54.49100 61.08200
+zoomBox 33.22950 51.26700 47.67550 58.25100
+zoomBox 38.54350 54.31200 43.17450 56.55100
+zoomBox 39.10150 54.74200 42.44750 56.35950
+zoomBox 39.31950 54.90950 42.16350 56.28450
+zoomBox 39.77450 55.27250 41.52250 56.11750
+zoomBox 39.88350 55.35900 41.36950 56.07750
+zoomBox 39.77400 55.27200 41.52300 56.11750
+deselectAll
+selectInst {mem_reg[0][7]}
+zoomBox 38.19750 54.03000 43.65450 56.66850
+zoomBox 32.00000 49.14850 52.03250 58.83350
+zoomBox 3.74400 26.88850 90.23650 68.70450
+zoomBox -94.43150 -50.45700 222.98650 103.00300
+deselectAll
+fit
+fit
+viewLast
+zoomBox 51.97500 37.17000 104.98350 62.79750
+zoomBox 70.65650 44.79300 90.64950 54.45900
+zoomBox 79.95750 48.12000 86.36800 51.21900
+zoomBox 82.94000 49.17750 84.99600 50.17150
+ui_view_box
+ui_view_box
+dbquery -area {82.94 49.1775 84.996 50.1715} -objType inst
+dbquery -area {82.94 49.1775 84.996 50.1715} -objType regular
+dbquery -area {82.94 49.1775 84.996 50.1715} -objType special
+selectVia 83.6000 50.1300 84.6000 51.1300 8 VDD
+deselectVia 83.6000 50.1300 84.6000 51.1300 8 VDD
+deselectVia 83.6000 50.1300 84.6000 51.1300 8 VDD
+zoomBox 80.16400 48.12600 86.57850 51.22700
+zoomBox 73.41550 45.57050 90.42600 53.79450
+zoomBox 69.27850 43.99900 92.82300 55.38200
+zoomBox 65.77250 40.95600 104.11250 59.49200
+zoomBox 60.25100 31.61950 146.66100 73.39550
+zoomBox 57.33100 25.09300 176.93000 82.91500
+zoomBox 49.55050 21.60250 190.25600 89.62850
+fit
+zoomBox -42.88650 2.76100 122.46750 82.70350
+zoomBox -9.53400 24.94050 63.83650 60.41250
+zoomBox 4.66450 32.29500 49.72350 54.07950
+selectWire 31.0000 3.1300 32.0000 82.3700 8 VDD
+ui_view_box
+ui_view_box
+dbquery -area {4.6645 32.295 49.7235 54.0795} -objType inst
+dbquery -area {4.6645 32.295 49.7235 54.0795} -objType regular
+dbquery -area {4.6645 32.295 49.7235 54.0795} -objType special
+selectWire 31.0000 3.1300 32.0000 82.3700 8 VDD
+fit
+place_opt_design
+saveDesign ./design/placement_new.enc
+fit
+viewLast
+fit
+zoomBox -0.42650 28.65650 72.94400 64.12850
+zoomBox 14.92600 38.18850 53.22650 56.70550
+zoomBox -2.05100 27.47550 71.32100 62.94800
+zoomBox -38.73600 27.47550 34.63600 62.94800
+zoomBox -31.39900 27.47550 41.97300 62.94800
+zoomBox -2.05100 27.47550 71.32100 62.94800
+zoomBox 5.28600 27.47550 78.65800 62.94800
+zoomBox 5.28600 41.66550 78.65800 77.13800
+zoomBox 5.28600 45.21300 78.65800 80.68550
+zoomBox 5.28600 34.57050 78.65800 70.04300
+zoomBox 5.28600 45.21300 78.65800 80.68550
+zoomBox 5.28600 55.85550 78.65800 91.32800
+zoomBox 5.28600 59.40300 78.65800 94.87550
+fit
+reportCongestion -3d -overflow
+ui_view_box
+ui_view_box
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType inst
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType regular
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType special
+reportCongestion -3d -overflow
+zoomBox -2.68200 46.90800 59.68200 77.05850
+zoomBox 0.36700 51.25050 53.37600 76.87850
+zoomBox 7.03300 60.74600 39.58750 76.48500
+selectInst {mem_reg[4][0]}
+zoomBox -7.20950 47.68900 66.16050 83.16050
+zoomBox -11.71750 43.54650 74.60000 85.27800
+zoomBox -17.02150 38.67350 84.52900 87.76950
+fit
+restoreDesign ./design/power_planning_done.enc.dat chip_top
+deletePlaceBlockage -all
+finishFloorplan -fillPlaceBlockage partial 30
+reportCongestion -3d -overflow
+deselectAll
+zoomBox 19.63600 51.97650 72.64500 77.60450
+zoomBox 38.23950 66.29200 55.23300 74.50750
+selectInst g30099__7410
+zoomBox 17.57800 58.86300 70.58750 84.49100
+fit
+zoomBox 13.77000 46.19200 76.13450 76.34300
+zoomBox 35.32350 62.37000 55.31800 72.03650
+zoomBox 42.97650 68.14100 48.42550 70.77550
+ui_view_box
+dbquery -area {41.2945 68.4 51.9055 73.53} -objType inst
+dbquery -area {41.2945 68.4 51.9055 73.53} -objType regular
+dbquery -area {41.2945 68.4 51.9055 73.53} -objType special
+selectInst g30099__7410
+deselectInst g30099__7410
+deselectInst g30099__7410
+selectObject Wire n_988(89720,137290,108280,137450)
+zoomBox 42.46550 67.81100 48.87600 70.91000
+zoomBox 41.86400 67.42200 49.40600 71.06850
+deselectAll
+selectInst g30099__7410
+ui_view_box
+ui_view_box
+dbquery -area {41.8635 67.422 49.406 71.0685} -objType inst
+dbquery -area {41.8635 67.422 49.406 71.0685} -objType regular
+dbquery -area {41.8635 67.422 49.406 71.0685} -objType special
+selectInst g30099__7410
+deselectInst g30099__7410
+deselectInst g30099__7410
+zoomBox 39.40100 66.34450 51.68300 72.28250
+zoomBox 33.55700 63.78750 57.08700 75.16350
+zoomBox 31.40200 62.84350 59.08450 76.22700
+zoomBox 28.86650 61.73300 61.43450 77.47850
+zoomBox 35.28200 63.93950 55.28350 73.60950
+zoomBox 40.10450 65.61200 50.54650 70.66050
+zoomBox 42.59050 66.56950 46.53000 68.47400
+selectWire 43.9750 67.1250 46.3400 67.2050 3 n_618
+ui_view_box
+ui_view_box
+dbquery -area {42.5905 66.5695 46.53 68.474} -objType inst
+dbquery -area {42.5905 66.5695 46.53 68.474} -objType regular
+dbquery -area {42.5905 66.5695 46.53 68.474} -objType special
+selectObject Wire n_618(87950,134250,92680,134410)
+deselectObject Wire n_618(87950,134250,92680,134410)
+deselectObject Wire n_618(87950,134250,92680,134410)
+selectInst g30186__4733
+fit
+restoreDesign ./design/power_planning_done.enc.dat chip_top
+deletePlaceBlockage -all
+finishFloorplan -fillPlaceBlockage partial 30
+restoreDesign ./design/power_planning_done.enc.dat chip_top
+deletePlaceBlockage -all
+finishFloorplan -fillPlaceBlockage partial 30
+reportCongestion -3d -overflow
+place_design
+place_opt_design -incremental
+saveDesign ./design/placement2_done.enc
+zoomBox 0.37500 9.49500 73.74550 44.96700
+zoomBox 19.61800 17.79750 43.14000 29.16950
+zoomBox 26.78850 22.80650 32.23800 25.44100
+zoomBox 28.44950 23.96650 29.71250 24.57700
+zoomBox 26.75850 22.82750 32.21600 25.46600
+zoomBox 28.65700 23.26100 30.71550 24.25600
+zoomBox 29.26000 23.36700 30.17400 23.80900
+zoomBox 29.52650 23.41400 29.93300 23.61050
+selectObject Pin g30322__1705/A1
+ui_view_box
+dbquery -area {29.461 23.3495 29.939 23.5805} -objType inst
+dbquery -area {29.461 23.3495 29.939 23.5805} -objType regular
+dbquery -area {29.461 23.3495 29.939 23.5805} -objType special
+selectObject Pin g30322__1705/A1
+zoomBox 28.89800 23.21750 30.16900 23.83200
+deselectAll
+selectInst g30322__1705
+fit
+deselectAll
+reportCongestion -3d -overflow
+ui_view_box
+ui_view_box
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType inst
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType regular
+dbquery -area {-53.467 -4.275 141.067 89.775} -objType special
+setPreference Layout3DMaxObjects 30000
+setPreference -help
+setPreference layout3DMaxObjCount 50000
+man setPreference
+setTieHiLoMode -maxfanout 10 -cell {TIEHI TIELO}
+addTieHiLo -prefix TIE
+report_constraint -all_violators -drv_violation_type max_transition
+report_constraint -all_violators -drv_violation_type max_capacitance
+report_constraint -all_violators -drv_violation_type max_fanout
+selectWire 85.6000 1.1300 86.6000 84.3700 6 VSS
+deselectAll
+zoomBox 9.95450 27.19750 72.31900 57.34850
+zoomBox 30.28650 37.28700 50.27950 46.95300
+zoomBox -40.31250 -11.82900 188.58000 98.83200
+fit
+checkFPlan -reportUtil
+setPathGroupOptions -weight 2 r2r
+ecoChangeCell -inst Top_I18 -cell BUFX20
+ecoChangeCell -inst ch3/sub_chip3_Multiplier/FE_OFC15680_n_408 -cell BUFX8
+zoomBox -15.17150 36.40400 37.83750 62.03200
+zoomBox -4.84200 43.29050 22.83000 56.66900
+zoomBox -28.75350 27.34850 57.56850 69.08200
+fit
+setLayerPreference node_gird -isVisible 1
+setLayerPreference node_gird -isVisible 0
+setLayerPreference node_overlay -isVisible 1
+setLayerPreference congestH -color {#000066 #0000c9 #0053ff #00fcfa #00a953 #53a900 #f9fc00 #ff5300 #ff5858 #ffffff}
+setLayerPreference congestV -color {#000066 #0000c9 #0053ff #00fcfa #00a953 #53a900 #f9fc00 #ff5300 #ff5858 #ffffff}
+fit
+fit
+viewLast
+zoomBox 7.00550 25.01450 80.37450 60.48550
+zoomBox 13.72650 29.69100 66.73600 55.31900
+zoomBox 16.35150 31.51750 61.40950 53.30150
+zoomBox 2.72950 22.03950 89.04900 63.77200
+zoomBox -2.30000 18.54050 99.25300 67.63750
+fit
+setLayerPreference node_overlay -isVisible 0
+add_ndr -width {Metal1 0.12 Metal2 0.14 Metal3 0.14 Metal4 0.14 Metal5 0.14 Metal6 0.14 Metal7 0.14 Metal8 0.14 Metal9 0.14 } -spacing {Metal1 0.12 Metal2 0.14 Metal3 0.14 Metal4 0.14 Metal5 0.14 Metal6 0.14 Metal7 0.14 Metal8 0.14 Metal9 0.14 } -name 2w2s
+add_ndr -width {Metal1 0.12 Metal2 0.14 Metal3 0.14 Metal4 0.14 Metal5 0.14 Metal6 0.14 Metal7 0.14 Metal8 0.14 Metal9 0.14 } -spacing {Metal1 0.06 Metal2 0.07 Metal3 0.07 Metal4 0.07 Metal5 0.07 Metal6 0.07 Metal7 0.07 Metal8 0.07 Metal9 0.07 } -name 2w1s
+add_ndr -width {Metal1 0.06 Metal2 0.07 Metal3 0.07 Metal4 0.07 Metal5 0.07 Metal6 0.07 Metal7 0.07 Metal8 0.07 Metal9 0.07 } -spacing {Metal1 0.06 Metal2 0.07 Metal3 0.07 Metal4 0.07 Metal5 0.07 Metal6 0.07 Metal7 0.07 Metal8 0.07 Metal9 0.07 } -name 1w1s
+create_route_type -name clktop -non_default_rule 2w2s -bottom_preferred_layer Metal5 -top_preferred_layer Metal6
+create_route_type -name clktrunk -non_default_rule 2w1s -bottom_preferred_layer Metal2 -top_preferred_layer Metal6
+create_route_type -name clkleaf -non_default_rule 1w1s -bottom_preferred_layer Metal1 -top_preferred_layer Metal2
+set_ccopt_property route_type clktop -net_type top
+set_ccopt_property route_type clktrunk -net_type trunk
+set_ccopt_property route_type clkleaf -net_type leaf
+set_ccopt_property buffer_cells {CLKBUFX4 CLKBUFX8 CLKBUFX12 CLKBUFX16}
+set_ccopt_property inverter_cells {CLKINVX4 CLKINVX8 CLKINVX12}
+set_ccopt_property clock_gating_cells TLATNTSCA*
+set_ccopt_property update_io_latency false
+fit
+viewLast
+zoomBox 4.31800 30.40900 90.63450 72.14000
+zoomBox 37.84800 50.53450 61.37000 61.90650
+fit
+set_ccopt_property max_fanout 32
+set_clock_uncertainty -setup 0.250 [all_clocks]
+set_clock_uncertainty -hold 0.125 [all_clocks]
+set_ccopt_property target_max_trans 0.8
+set_ccopt_property target_skew 0.11
+setNanoRouteMode -routeStrictlyHonorNonDefaultRule 2w2s
+setNanoRouteMode -routeBottomRoutingLayer 1
+setNanoRouteMode -routeTopRoutingLayer 7
+setNanoRouteMode -routeWithTimingDriven true
+setNanoRouteMode -routeWithSiDriven true
+setNanoRouteMode -droutePostRouteSwapVia true
+setNanoRouteMode -drouteUseMultiCutViaEffort high
+ccopt_design -cts -expandedViews -outdir ./reports/timingReports/ -prefix cts
+fit
+viewLast
+fit
+fit
+fit
+ctd_win -side none -id ctd_window
+fit
+fit
+selectInst CTS_ccl_a_buf_00001
+zoomSelected
+deselectAll
+selectWire 21.5000 36.5350 59.1400 36.6150 5 n_972
+fit
+selectInst CTS_ccl_a_buf_00001
+zoomSelected
+deselectInst CTS_ccl_a_buf_00001
+deselectAll
+fit
+fit
+selectInst TAP_69
+deselectAll
+selectWire 71.0000 3.1300 72.0000 82.3700 8 VDD
+deselectAll
+selectWire 55.0600 71.4950 55.1400 72.1450 2 n_873
+deselectAll
+selectVia 55.7650 46.7700 55.8950 46.9000 2 n_744
+deselectAll
+selectInst {mem_reg[1][7]}
+zoomBox 8.65650 8.52800 39.54850 43.85800
+zoomBox 12.55600 14.85800 24.20750 28.18350
+zoomBox 13.67300 16.70350 19.75550 23.66000
+zoomBox 9.74200 12.15800 25.87050 30.60350
+fit
+deselectAll
+ui_view_box
+ui_view_box
+dbquery -area {-4.38 -12.352 91.98 97.852} -objType inst
+dbquery -area {-4.38 -12.352 91.98 97.852} -objType regular
+dbquery -area {-4.38 -12.352 91.98 97.852} -objType special
+selectInst {mem_reg[0][9]}
+zoomSelected
+zoomBox 46.48600 45.11350 62.01600 62.87450
+zoomBox 45.17600 43.69800 63.44650 64.59350
+zoomBox 37.17900 35.05800 72.18100 75.08850
+zoomBox 21.92300 18.50750 88.97650 95.19450
+zoomBox 9.68650 5.20900 102.49450 111.35050
+zoomBox 3.02350 -2.99200 112.20950 121.88100
+deselectAll
+fit
+selectInst {mem_reg[0][9]}
+zoomSelected
+zoomBox 44.96000 46.31650 58.16000 61.41300
+zoomBox 43.64000 46.31650 56.84000 61.41300
+zoomBox 42.32000 46.31650 55.52000 61.41300
+zoomBox 39.68000 46.31650 52.88000 61.41300
+zoomBox 39.68000 44.80700 52.88000 59.90350
+zoomBox 38.36000 44.80700 51.56000 59.90350
+zoomBox 39.68000 44.80700 52.88000 59.90350
+zoomBox 43.64000 44.80700 56.84000 59.90350
+zoomBox 44.96000 44.80700 58.16000 59.90350
+zoomBox 46.28000 44.80700 59.48000 59.90350
+zoomBox 47.60000 44.80700 60.80000 59.90350
+zoomBox 48.92000 44.80700 62.12000 59.90350
+zoomBox 50.24000 44.80700 63.44000 59.90350
+zoomBox 51.56000 44.80700 64.76000 59.90350
+deselectInst {mem_reg[0][9]}
+selectInst CTS_ccl_a_buf_00005
+zoomSelected
+zoomBox 4.24300 41.11200 19.11950 58.12600
+zoomBox -4.36150 32.70200 24.13800 65.29600
+zoomBox -7.89600 29.63300 25.63300 67.97900
+zoomBox -12.06250 26.03050 27.38350 71.14350
+zoomBox -22.73050 16.80600 31.86600 79.24650
+zoomBox -37.64500 4.12900 37.92100 90.55150
+zoomBox -47.12950 -3.93300 41.77150 97.74050
+zoomBox -58.28800 -13.41750 46.30150 106.19850
+zoomBox -47.82900 -13.41750 56.76050 106.19850
+zoomBox -37.37000 -13.41750 67.21950 106.19850
+zoomBox -26.91100 -13.41750 77.67850 106.19850
+zoomBox -16.45200 -13.41750 88.13750 106.19850
+deselectInst CTS_ccl_a_buf_00005
+selectInst {mem_reg[9][2]}
+zoomSelected
+zoomBox -0.16750 46.65150 15.36200 64.41200
+zoomBox -3.87550 43.17250 17.61900 67.75500
+zoomBox -9.00750 38.35800 20.74250 72.38200
+zoomBox 3.16900 48.69000 14.38950 61.52250
+zoomBox 5.38800 50.45250 13.49500 59.72450
+zoomBox 6.25450 51.14100 13.14550 59.02200
+zoomBox -4.13400 42.87150 17.36250 67.45650
+saveDesign ./design/cts.enc
+report_clock_timing -type latency -verbose
+report_clock_timing -type skew -verbose
+report_min_pulse_width  -violation_only
+timeDesign -expandedViews -postCTS -numPaths 10 -outDir ./reports/cts_opt -prefix cts_opt
+timeDesign -expandedViews -postCTS -numPaths 10 -outDir ./reports/cts -prefix postcts_hold -hold
+setOptMode -opt_skew_ccopt extreme
+optDesign -postCTS -expandedViews -outDir ./reports/cts_opt -prefix ctsopt
+optDesign -postCTS -expandedViews -outDir ./reports/cts_opt -prefix ctsopt_hold -hold
+fit
+zoomBox 37.10250 11.28050 63.36000 41.31050
+selectInst {mem_reg[3][8]}
+zoomSelected
+zoomBox 62.26650 23.16200 77.79600 40.92250
+zoomBox 55.34800 17.51700 85.09850 51.54200
+zoomBox 31.44500 -1.98350 110.32900 88.23400
+zoomBox -16.66950 -41.23500 161.11600 162.09300
+ui_view_box
+dbquery -area {63.4 24.0865 76.6 39.183} -objType inst
+dbquery -area {63.4 24.0865 76.6 39.183} -objType regular
+dbquery -area {63.4 24.0865 76.6 39.183} -objType special
+selectInst {mem_reg[3][8]}
+deselectInst {mem_reg[3][8]}
+deselectInst {mem_reg[3][8]}
+selectInst CTS_ccl_a_buf_00003
+zoomSelected
+ui_view_box
+dbquery -area {47.4 47.0085 56.4 57.3015} -objType inst
+dbquery -area {47.4 47.0085 56.4 57.3015} -objType regular
+dbquery -area {47.4 47.0085 56.4 57.3015} -objType special
+selectInst CTS_ccl_a_buf_00003
+deselectInst CTS_ccl_a_buf_00003
+selectVia 53.8350 55.1300 53.9650 55.2600 5 {rdata_o[0]}
+fit
+deselectAll
+fit
+viewLast
+setNanoRouteMode -reset
+setNanoRouteMode -route_detail_auto_stop true
+fit
+setNanoRouteMode -route_detail_auto_stop true
+setDesignMode -bottomRoutingLayer 1
+setDesignMode -topRoutingLayer 7
+routeDesign -globalDetail
+selectWire 3.0000 81.3700 84.6000 82.3700 9 VDD
+deselectAll
+fit
+verifyConnectivity
+ecoRoute
+verify_drc -check_short_only -limit 0
+verify_drc -limit 0
+saveNetlist ./outputs/chip_top.v
+saveNetlist ./outputs/chip_top.v
+defOut ./outputs/chip_top.def
+create_constraint_mode -name func -sdc_files ./inputs/chip_top.sdc
+update_analysis_view -constraint_mode func -name  func_worst
+update_analysis_view -constraint_mode func -name  func_best
+optDesign -postRoute -expandedViews -outDir ./reports/route_opt -prefix routeopt
+optDesign -postRoute -expandedViews -outDir ./reports/route_opt -prefix routeopt_hold -hold
+setDesignMode -topRoutingLayer 8
+ecoRoute
+timeDesign -postRoute -prefix route_setup -outDir ./outputs/route -expandedViews
+timeDesign -postRoute -prefix route_setup -outDir ./outputs/route -expandedViews
+timeDesign -postRoute -prefix route_setup -outDir ./outputs/route -expandedViews
+selectInst {mem_reg[0][9]}
+zoomSelected
+zoomBox 35.33900 40.79800 76.51500 76.97900
+zoomBox 5.22000 19.25450 114.39700 115.18700
+zoomBox -25.13550 -2.48750 152.64150 153.72300
+deselectAll
+selectInst {mem_reg[0][9]}
+zoomSelected
+ui_view_box
+ui_view_box
+dbquery -area {47.6 48.0655 60.8 59.664} -objType inst
+dbquery -area {47.6 48.0655 60.8 59.664} -objType regular
+dbquery -area {47.6 48.0655 60.8 59.664} -objType special
+selectInst {mem_reg[0][9]}
+deselectInst {mem_reg[0][9]}
+deselectInst {mem_reg[0][9]}
+selectInst {mem_reg[6][2]}
+deselectInst {mem_reg[6][2]}
+deselectInst {mem_reg[6][2]}

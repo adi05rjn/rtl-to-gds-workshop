@@ -1,0 +1,219 @@
+[04/14 14:41:18      0s] 
+[04/14 14:41:18      0s] Cadence Innovus(TM) Implementation System.
+[04/14 14:41:18      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/14 14:41:18      0s] 
+[04/14 14:41:18      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[04/14 14:41:18      0s] Options:	
+[04/14 14:41:18      0s] Date:		Tue Apr 14 14:41:18 2026
+[04/14 14:41:18      0s] Host:		cad51 (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (4cores*4cpus*Intel(R) Xeon(R) CPU E3-1220 v5 @ 3.00GHz 8192KB)
+[04/14 14:41:18      0s] OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+[04/14 14:41:18      0s] 
+[04/14 14:41:18      0s] License:
+[04/14 14:41:18      0s] 		[14:41:18.395673] Configured Lic search path (21.01-s002): 5280@CadenceServer
+
+[04/14 14:41:18      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[04/14 14:41:18      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[04/14 14:41:31     12s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[04/14 14:41:34     15s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[04/14 14:41:34     15s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[04/14 14:41:34     15s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[04/14 14:41:34     15s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[04/14 14:41:34     15s] @(#)CDS: CPE v21.15-s076
+[04/14 14:41:34     15s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[04/14 14:41:34     15s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[04/14 14:41:34     15s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[04/14 14:41:34     15s] @(#)CDS: RCDB 11.15.0
+[04/14 14:41:34     15s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[04/14 14:41:34     15s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[04/14 14:41:34     15s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_599289_cad51_digital_i1hHgZ.
+
+[04/14 14:41:34     15s] Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+[04/14 14:41:36     17s] 
+[04/14 14:41:36     17s] **INFO:  MMMC transition support version v31-84 
+[04/14 14:41:36     17s] 
+[04/14 14:41:36     17s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[04/14 14:41:36     17s] <CMD> suppressMessage ENCEXT-2799
+[04/14 14:41:36     17s] <CMD> getVersion
+[04/14 14:41:36     17s] <CMD> getVersion
+[04/14 14:41:36     17s] <CMD> getVersion
+[04/14 14:41:36     17s] [INFO] Loading PVS 22.20 fill procedures
+[04/14 14:41:36     17s] <CMD> win
+[04/14 14:41:43     18s] <CMD> set restore_db_file_check 0
+[04/14 14:41:55     20s] <CMD> restoreDesign ./design/physicalcells_placed.enc.dat/ memory
+[04/14 14:41:55     20s] #% Begin load design ... (date=04/14 14:41:55, mem=1008.6M)
+[04/14 14:41:55     21s] Loading design 'memory' saved by 'Innovus' '21.15-s110_1' on 'Tue Apr 14 14:38:31 2026'.
+[04/14 14:41:55     21s] % Begin Load MMMC data ... (date=04/14 14:41:55, mem=1009.9M)
+[04/14 14:41:55     21s] % End Load MMMC data ... (date=04/14 14:41:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=1011.1M, current mem=1011.1M)
+[04/14 14:41:55     21s] 
+[04/14 14:41:55     21s] Loading LEF file /home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef ...
+[04/14 14:41:55     21s] **ERROR: (IMPSYUTIL-109):	'/home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef' is an invalid file name.
+**ERROR: (IMPSYUTIL-96):	Cannot open (for read) lef file: '/home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef'. The reason is: No such file or directory
+Type 'man IMPSYUTIL-96' for more detail.
+[04/14 14:41:55     21s] **ERROR: (IMPLF-2):	Could not open LEF file '/home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef'
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+[04/14 14:41:55     21s] 
+[04/14 14:41:55     21s] 
+[04/14 14:41:55     21s] ERROR: 
+[04/14 14:41:55     21s] 
+[04/14 14:41:55     21s] 
+[04/14 14:41:55     21s]     while executing
+[04/14 14:41:55     21s] "error $catchMsg"
+[04/14 14:41:55     21s]     (procedure "restoreDesign" line 33)
+[04/14 14:41:55     21s] 
+[04/14 14:41:56     21s] 
+[04/14 14:43:00     32s] <CMD> encMessage warning 0
+[04/14 14:43:00     32s] Suppress "**WARN ..." messages.
+[04/14 14:43:00     32s] <CMD> encMessage debug 0
+[04/14 14:43:00     32s] <CMD> is_common_ui_mode
+[04/14 14:43:00     32s] <CMD> restoreDesign /home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat memory
+[04/14 14:43:00     32s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[04/14 14:43:00     32s] % Begin load design ... (date=04/14 14:43:00, mem=1014.3M)
+[04/14 14:43:01     32s] Loading design 'memory' saved by 'Innovus' '21.15-s110_1' on 'Tue Apr 14 14:38:31 2026'.
+[04/14 14:43:01     32s] % Begin Load MMMC data ... (date=04/14 14:43:01, mem=1015.6M)
+[04/14 14:43:01     32s] Extraction setup Delayed 
+[04/14 14:43:01     32s] Extraction setup Delayed 
+[04/14 14:43:01     32s] Extraction setup Delayed 
+[04/14 14:43:01     32s] The existing analysis_view 'func_ff' has been replaced with new attributes.
+[04/14 14:43:01     32s] The existing analysis_view 'func_ss' has been replaced with new attributes.
+[04/14 14:43:01     32s] INFO: New setup and hold views overwrite old settings during design initialization
+[04/14 14:43:01     32s] % End Load MMMC data ... (date=04/14 14:43:01, total cpu=0:00:00.0, real=0:00:00.0, peak res=1016.0M, current mem=1016.0M)
+[04/14 14:43:01     32s] 
+[04/14 14:43:01     32s] Loading LEF file /home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef ...
+[04/14 14:43:01     32s] **ERROR: (IMPSYUTIL-109):	'/home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef' is an invalid file name.
+**ERROR: (IMPSYUTIL-96):	Cannot open (for read) lef file: '/home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef'. The reason is: No such file or directory
+Type 'man IMPSYUTIL-96' for more detail.
+[04/14 14:43:01     32s] **ERROR: (IMPLF-2):	Could not open LEF file '/home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef'
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+[04/14 14:43:01     32s] 
+[04/14 14:43:01     32s] 
+[04/14 14:43:01     32s] ERROR: 
+[04/14 14:43:01     32s] 
+[04/14 14:43:01     32s] 
+[04/14 14:43:01     32s]     while executing
+[04/14 14:43:01     32s] "error $catchMsg"
+[04/14 14:43:01     32s]     (procedure "restoreDesign" line 33)
+[04/14 14:43:01     32s] 
+[04/14 14:43:01     32s] <CMD> encMessage warning 1
+[04/14 14:43:01     32s] Un-suppress "**WARN ..." messages.
+[04/14 14:43:01     32s] <CMD> encMessage debug 0
+[04/14 14:43:03     33s] <CMD> encMessage warning 0
+[04/14 14:43:03     33s] Suppress "**WARN ..." messages.
+[04/14 14:43:03     33s] <CMD> encMessage debug 0
+[04/14 14:43:03     33s] <CMD> is_common_ui_mode
+[04/14 14:43:03     33s] <CMD> restoreDesign /home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat memory
+[04/14 14:43:03     33s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[04/14 14:43:03     33s] % Begin load design ... (date=04/14 14:43:03, mem=1016.0M)
+[04/14 14:43:03     33s] Loading design 'memory' saved by 'Innovus' '21.15-s110_1' on 'Tue Apr 14 14:38:31 2026'.
+[04/14 14:43:03     33s] % Begin Load MMMC data ... (date=04/14 14:43:03, mem=1016.2M)
+[04/14 14:43:03     33s] Extraction setup Delayed 
+[04/14 14:43:03     33s] Extraction setup Delayed 
+[04/14 14:43:03     33s] Extraction setup Delayed 
+[04/14 14:43:03     33s] The existing analysis_view 'func_ff' has been replaced with new attributes.
+[04/14 14:43:03     33s] The existing analysis_view 'func_ss' has been replaced with new attributes.
+[04/14 14:43:03     33s] INFO: New setup and hold views overwrite old settings during design initialization
+[04/14 14:43:03     33s] % End Load MMMC data ... (date=04/14 14:43:03, total cpu=0:00:00.0, real=0:00:00.0, peak res=1016.2M, current mem=1016.2M)
+[04/14 14:43:03     33s] 
+[04/14 14:43:03     33s] Loading LEF file /home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef ...
+[04/14 14:43:03     33s] **ERROR: (IMPSYUTIL-109):	'/home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef' is an invalid file name.
+**ERROR: (IMPSYUTIL-96):	Cannot open (for read) lef file: '/home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef'. The reason is: No such file or directory
+Type 'man IMPSYUTIL-96' for more detail.
+[04/14 14:43:03     33s] **ERROR: (IMPLF-2):	Could not open LEF file '/home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef'
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+[04/14 14:43:03     33s] 
+[04/14 14:43:03     33s] 
+[04/14 14:43:03     33s] ERROR: 
+[04/14 14:43:03     33s] 
+[04/14 14:43:03     33s] 
+[04/14 14:43:03     33s]     while executing
+[04/14 14:43:03     33s] "error $catchMsg"
+[04/14 14:43:03     33s]     (procedure "restoreDesign" line 33)
+[04/14 14:43:03     33s] 
+[04/14 14:43:03     33s] <CMD> encMessage warning 1
+[04/14 14:43:03     33s] Un-suppress "**WARN ..." messages.
+[04/14 14:43:03     33s] <CMD> encMessage debug 0
+[04/14 14:46:52     70s] <CMD> restoreDesign ./design/physicalcells_placed.enc.dat/ memory
+[04/14 14:46:52     70s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[04/14 14:46:52     70s] % Begin load design ... (date=04/14 14:46:52, mem=1024.5M)
+[04/14 14:46:52     70s] Loading design 'memory' saved by 'Innovus' '21.15-s110_1' on 'Tue Apr 14 14:38:31 2026'.
+[04/14 14:46:52     70s] % Begin Load MMMC data ... (date=04/14 14:46:52, mem=1024.5M)
+[04/14 14:46:52     70s] Extraction setup Delayed 
+[04/14 14:46:52     70s] Extraction setup Delayed 
+[04/14 14:46:52     70s] Extraction setup Delayed 
+[04/14 14:46:52     70s] The existing analysis_view 'func_ff' has been replaced with new attributes.
+[04/14 14:46:52     70s] The existing analysis_view 'func_ss' has been replaced with new attributes.
+[04/14 14:46:52     70s] INFO: New setup and hold views overwrite old settings during design initialization
+[04/14 14:46:52     70s] % End Load MMMC data ... (date=04/14 14:46:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1024.5M, current mem=1024.5M)
+[04/14 14:46:52     70s] 
+[04/14 14:46:52     70s] Loading LEF file /home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef ...
+[04/14 14:46:52     70s] **ERROR: (IMPSYUTIL-109):	'/home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef' is an invalid file name.
+**ERROR: (IMPSYUTIL-96):	Cannot open (for read) lef file: '/home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef'. The reason is: No such file or directory
+Type 'man IMPSYUTIL-96' for more detail.
+[04/14 14:46:52     70s] **ERROR: (IMPLF-2):	Could not open LEF file '/home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef'
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+[04/14 14:46:52     70s] 
+[04/14 14:46:52     70s] 
+[04/14 14:46:52     70s] ERROR: 
+[04/14 14:46:52     70s] 
+[04/14 14:46:52     70s] 
+[04/14 14:46:52     70s]     while executing
+[04/14 14:46:52     70s] "error $catchMsg"
+[04/14 14:46:52     70s]     (procedure "restoreDesign" line 33)
+[04/14 14:46:52     70s] 
+[04/14 14:46:52     70s] 
+[04/14 14:49:45     98s] <CMD> restoreDesign ./design/physicalcells_placed.enc.dat/ memory
+[04/14 14:49:45     98s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[04/14 14:49:45     98s] % Begin load design ... (date=04/14 14:49:45, mem=1024.7M)
+[04/14 14:49:45     98s] Loading design 'memory' saved by 'Innovus' '21.15-s110_1' on 'Tue Apr 14 14:38:31 2026'.
+[04/14 14:49:45     98s] % Begin Load MMMC data ... (date=04/14 14:49:45, mem=1024.7M)
+[04/14 14:49:45     98s] Extraction setup Delayed 
+[04/14 14:49:45     98s] Extraction setup Delayed 
+[04/14 14:49:45     98s] Extraction setup Delayed 
+[04/14 14:49:45     98s] The existing analysis_view 'func_ff' has been replaced with new attributes.
+[04/14 14:49:45     98s] The existing analysis_view 'func_ss' has been replaced with new attributes.
+[04/14 14:49:45     98s] INFO: New setup and hold views overwrite old settings during design initialization
+[04/14 14:49:45     98s] % End Load MMMC data ... (date=04/14 14:49:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=1024.7M, current mem=1024.7M)
+[04/14 14:49:45     98s] 
+[04/14 14:49:45     98s] Loading LEF file /home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef ...
+[04/14 14:49:45     98s] **ERROR: (IMPSYUTIL-109):	'/home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef' is an invalid file name.
+**ERROR: (IMPSYUTIL-96):	Cannot open (for read) lef file: '/home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef'. The reason is: No such file or directory
+Type 'man IMPSYUTIL-96' for more detail.
+[04/14 14:49:45     98s] **ERROR: (IMPLF-2):	Could not open LEF file '/home/digital/Workshop_1BI23EC123/Day_4&5/Physical_Design/design/physicalcells_placed.enc.dat/libs/lef/gsclib045_tech.lef'
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+[04/14 14:49:45     98s] 
+[04/14 14:49:45     98s] 
+[04/14 14:49:45     98s] ERROR: 
+[04/14 14:49:45     98s] 
+[04/14 14:49:45     98s] 
+[04/14 14:49:45     98s]     while executing
+[04/14 14:49:45     98s] "error $catchMsg"
+[04/14 14:49:45     98s]     (procedure "restoreDesign" line 33)
+[04/14 14:49:45     98s] 
+[04/14 14:49:46     98s] 
+[04/14 14:50:33    106s] 
+[04/14 14:50:33    106s] *** Memory Usage v#1 (Current mem = 1029.234M, initial mem = 491.863M) ***
+[04/14 14:50:33    106s] 
+[04/14 14:50:33    106s] *** Summary of all messages that are not suppressed in this session:
+[04/14 14:50:33    106s] Severity  ID               Count  Summary                                  
+[04/14 14:50:33    106s] ERROR     IMPLF-2              5  Could not open LEF file '%s'             
+[04/14 14:50:33    106s] ERROR     IMPLF-26             5  No technology information is defined in ...
+[04/14 14:50:33    106s] ERROR     IMPSYT-16013         5  Loading LEF file(s) failed, and has abor...
+[04/14 14:50:33    106s] ERROR     IMPSYUTIL-96         5  Cannot open (for %s) %s file: '%s'. The ...
+[04/14 14:50:33    106s] ERROR     IMPSYUTIL-109        5  '%s' is an invalid file name.            
+[04/14 14:50:33    106s] *** Message Summary: 0 warning(s), 25 error(s)
+[04/14 14:50:33    106s] 
+[04/14 14:50:33    106s] --- Ending "Innovus" (totcpu=0:01:46, real=0:09:15, mem=1029.2M) ---

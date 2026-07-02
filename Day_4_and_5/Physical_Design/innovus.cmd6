@@ -1,0 +1,40 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue Apr 14 14:35:29 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+save_global inputs/Default.globals
+set init_gnd_net VSS
+set init_lef_file {../libs/lef/gsclib045_tech.lef ../libs/lef/gsclib045_hvt_macro.lef ../libs/lef/gsclib045_lvt_macro.lef ../libs/lef/gsclib045_macro.lef}
+set init_verilog inputs/memory_netlist_dft.v
+set init_mmmc_file inputs/gprs.view
+set init_pwr_net VDD
+init_design
+floorPlan -site CoreSite -r {1 0.55 5 5 5 5} -coreMarginsBy io
+editPin -fixoverlap 1 -spreadDirection clockwise -side left -layer 5 -spreadType RANGE -start {0.0695 26.716} -end {-0.199 71.6845} -pin {clk_i reset_i valid_i {addr_i[3]} {addr_i[2]} {addr_i[1]} {addr_i[0]} {wdata_i[15]} {wdata_i[14]} {wdata_i[13]} {wdata_i[12]} {wdata_i[11]} {wdata_i[10]} {wdata_i[9]} {wdata_i[8]} {wdata_i[7]} {wdata_i[6]} {wdata_i[5]} {wdata_i[4]} {wdata_i[3]} {wdata_i[2]} {wdata_i[1]} {wdata_i[0]} wr_rd_i SE scan_in1 scan_in2 scan_in3 scan_in4 scan_in5 scan_in6} -snap TRACK
+editPin -fixOverlap 1 -spreadDirection counterclockwise -side right -layer 5 -spreadType RANGE -start {87.7145 18.547} -end {87.515 69.2025} -pin {ready_o {rdata_o[15]} {rdata_o[14]} {rdata_o[13]} {rdata_o[12]} {rdata_o[11]} {rdata_o[10]} {rdata_o[9]} {rdata_o[8]} {rdata_o[7]} {rdata_o[6]} {rdata_o[5]} {rdata_o[4]} {rdata_o[3]} {rdata_o[2]} {rdata_o[1]} {rdata_o[0]} scan_out1 scan_out2 scan_out3 scan_out4 scan_out5 scan_out6} -snap TRACK
+checkPinAssignment -report_violating_pin -outFile ./reports/pin_check.txt
+setEndCapMode -leftEdge FILL2 -rightEdge FILL2
+addEndCap -prefix ENDCAP
+addWellTap -checkerBoard -cell FILL2 -prefix TAP -fixedGap -cellInterval 45
+verifyWellTap -cell FILL2 -rule 45
+saveDesign ./design/physicalcells_placed.enc
+zoomBox -26.88900 -0.37800 102.08700 61.97700
+zoomBox -79.03150 -10.90450 130.98450 90.63050
+setLayerPreference trackObj -isVisible 1

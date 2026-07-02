@@ -1,0 +1,856 @@
+[04/13 22:34:42      0s] 
+[04/13 22:34:42      0s] Cadence Innovus(TM) Implementation System.
+[04/13 22:34:42      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/13 22:34:42      0s] 
+[04/13 22:34:42      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[04/13 22:34:42      0s] Options:	
+[04/13 22:34:42      0s] Date:		Mon Apr 13 22:34:42 2026
+[04/13 22:34:42      0s] Host:		cad51 (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (4cores*4cpus*Intel(R) Xeon(R) CPU E3-1220 v5 @ 3.00GHz 8192KB)
+[04/13 22:34:42      0s] OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+[04/13 22:34:42      0s] 
+[04/13 22:34:42      0s] License:
+[04/13 22:34:42      0s] 		[22:34:42.395657] Configured Lic search path (21.01-s002): 5280@CadenceServer
+
+[04/13 22:34:42      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[04/13 22:34:42      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[04/13 22:34:54     12s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[04/13 22:34:57     15s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[04/13 22:34:57     15s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[04/13 22:34:57     15s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[04/13 22:34:57     15s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[04/13 22:34:57     15s] @(#)CDS: CPE v21.15-s076
+[04/13 22:34:57     15s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[04/13 22:34:57     15s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[04/13 22:34:57     15s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[04/13 22:34:57     15s] @(#)CDS: RCDB 11.15.0
+[04/13 22:34:57     15s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[04/13 22:34:57     15s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[04/13 22:34:57     15s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_552433_cad51_digital_FQZ1mH.
+
+[04/13 22:34:57     15s] Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+[04/13 22:34:59     17s] 
+[04/13 22:34:59     17s] **INFO:  MMMC transition support version v31-84 
+[04/13 22:34:59     17s] 
+[04/13 22:34:59     17s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[04/13 22:34:59     17s] <CMD> suppressMessage ENCEXT-2799
+[04/13 22:34:59     17s] <CMD> getVersion
+[04/13 22:34:59     17s] <CMD> getVersion
+[04/13 22:35:00     17s] <CMD> getVersion
+[04/13 22:35:00     17s] [INFO] Loading PVS 22.20 fill procedures
+[04/13 22:35:00     17s] <CMD> win
+[04/13 22:36:00     29s] <CMD> save_global inputs/Default.globals
+[04/13 22:36:01     30s] <CMD> set init_gnd_net VSS
+[04/13 22:36:01     30s] <CMD> set init_lef_file {../libs/lef/gsclib045_tech.lef ../libs/lef/gsclib045_hvt_macro.lef ../libs/lef/gsclib045_lvt_macro.lef ../libs/lef/gsclib045_macro.lef}
+[04/13 22:36:01     30s] <CMD> set init_verilog inputs/memory_netlist_dft.v
+[04/13 22:36:01     30s] <CMD> set init_mmmc_file inputs/gprs.view
+[04/13 22:36:01     30s] <CMD> set init_pwr_net VDD
+[04/13 22:36:01     30s] <CMD> init_design
+[04/13 22:36:01     30s] #% Begin Load MMMC data ... (date=04/13 22:36:01, mem=1009.2M)
+[04/13 22:36:01     30s] #% End Load MMMC data ... (date=04/13 22:36:01, total cpu=0:00:00.0, real=0:00:00.0, peak res=1009.9M, current mem=1009.9M)
+[04/13 22:36:01     30s] 
+[04/13 22:36:01     30s] Loading LEF file ../libs/lef/gsclib045_tech.lef ...
+[04/13 22:36:01     30s] 
+[04/13 22:36:01     30s] Loading LEF file ../libs/lef/gsclib045_hvt_macro.lef ...
+[04/13 22:36:01     30s] Set DBUPerIGU to M2 pitch 400.
+[04/13 22:36:02     30s] 
+[04/13 22:36:02     30s] Loading LEF file ../libs/lef/gsclib045_lvt_macro.lef ...
+[04/13 22:36:02     30s] 
+[04/13 22:36:02     30s] Loading LEF file ../libs/lef/gsclib045_macro.lef ...
+[04/13 22:36:02     30s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/13 22:36:02     30s] Type 'man IMPLF-200' for more detail.
+[04/13 22:36:02     30s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNALVT' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/13 22:36:02     30s] Type 'man IMPLF-200' for more detail.
+[04/13 22:36:02     30s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNAHVT' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/13 22:36:02     30s] Type 'man IMPLF-200' for more detail.
+[04/13 22:36:02     30s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[04/13 22:36:02     30s] Loading view definition file from inputs/gprs.view
+[04/13 22:36:02     30s] Reading slow timing library '/home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/slow/slow_vdd1v0_basicCells.lib' ...
+[04/13 22:36:02     31s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/slow/slow_vdd1v0_basicCells.lib)
+[04/13 22:36:02     31s] Read 480 cells in library 'slow_vdd1v0' 
+[04/13 22:36:02     31s] Reading slow timing library '/home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/slow/slow_vdd1v0_basicCells_hvt.lib' ...
+[04/13 22:36:02     31s] **WARN: (TECHLIB-459):	Appending library 'slow_vdd1v0' to the previously read library of the same name and nominal PVT. Cell definitions from the previously read library will not be overridden. (File /home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/slow/slow_vdd1v0_basicCells_hvt.lib)
+[04/13 22:36:03     31s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNAHVT'. The cell will only be used for analysis. (File /home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/slow/slow_vdd1v0_basicCells_hvt.lib)
+[04/13 22:36:03     31s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/slow/slow_vdd1v0_basicCells_hvt.lib)
+[04/13 22:36:03     31s] Read 480 cells in library 'slow_vdd1v0' 
+[04/13 22:36:03     31s] Reading slow timing library '/home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/slow/slow_vdd1v0_basicCells_lvt.lib' ...
+[04/13 22:36:03     31s] **WARN: (TECHLIB-459):	Appending library 'slow_vdd1v0' to the previously read library of the same name and nominal PVT. Cell definitions from the previously read library will not be overridden. (File /home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/slow/slow_vdd1v0_basicCells_lvt.lib)
+[04/13 22:36:03     32s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNALVT'. The cell will only be used for analysis. (File /home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/slow/slow_vdd1v0_basicCells_lvt.lib)
+[04/13 22:36:03     32s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNAHVT'. The cell will only be used for analysis. (File /home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/slow/slow_vdd1v0_basicCells_lvt.lib)
+[04/13 22:36:03     32s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/slow/slow_vdd1v0_basicCells_lvt.lib)
+[04/13 22:36:03     32s] Read 480 cells in library 'slow_vdd1v0' 
+[04/13 22:36:03     32s] Reading slow timing library '/home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/slow/MEM1_256X32_slow.lib' ...
+[04/13 22:36:03     32s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/slow/MEM1_256X32_slow.lib, Line 135)
+Read 1 cells in library 'MEM1_256X32' 
+[04/13 22:36:03     32s] Reading fast timing library '/home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/fast/fast_vdd1v0_basicCells.lib' ...
+[04/13 22:36:04     32s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/fast/fast_vdd1v0_basicCells.lib)
+[04/13 22:36:04     32s] Read 480 cells in library 'fast_vdd1v0' 
+[04/13 22:36:04     32s] Reading fast timing library '/home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/fast/fast_vdd1v0_basicCells_hvt.lib' ...
+[04/13 22:36:04     32s] **WARN: (TECHLIB-459):	Appending library 'fast_vdd1v0' to the previously read library of the same name and nominal PVT. Cell definitions from the previously read library will not be overridden. (File /home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/fast/fast_vdd1v0_basicCells_hvt.lib)
+[04/13 22:36:04     32s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNAHVT'. The cell will only be used for analysis. (File /home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/fast/fast_vdd1v0_basicCells_hvt.lib)
+[04/13 22:36:04     32s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/fast/fast_vdd1v0_basicCells_hvt.lib)
+[04/13 22:36:04     32s] Read 480 cells in library 'fast_vdd1v0' 
+[04/13 22:36:04     32s] Reading fast timing library '/home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/fast/fast_vdd1v2_basicCells_lvt.lib' ...
+[04/13 22:36:05     33s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNALVT'. The cell will only be used for analysis. (File /home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/fast/fast_vdd1v2_basicCells_lvt.lib)
+[04/13 22:36:05     33s] Read 480 cells in library 'fast_vdd1v2' 
+[04/13 22:36:05     33s] Reading fast timing library '/home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/fast/MEM1_256X32_slow.lib' ...
+[04/13 22:36:05     33s] **ERROR: (TECHLIB-1198):	The 'index_2' is defined but its corresponding 'variable_2' is not defined for template 'lu_table_template' 'load_template'. This may lead to undesirable analysis results. (File /home/digital/Workshop_1BI23EC123/Day_4/libs/timing_lib/fast/MEM1_256X32_slow.lib, Line 135)
+Read 1 cells in library 'MEM1_256X32' 
+[04/13 22:36:05     33s] Ending "PreSetAnalysisView" (total cpu=0:00:02.7, real=0:00:03.0, peak res=1130.6M, current mem=1055.6M)
+[04/13 22:36:05     33s] *** End library_loading (cpu=0.04min, real=0.05min, mem=68.8M, fe_cpu=0.56min, fe_real=1.38min, fe_mem=1095.2M) ***
+[04/13 22:36:05     33s] #% Begin Load netlist data ... (date=04/13 22:36:05, mem=1055.6M)
+[04/13 22:36:05     33s] *** Begin netlist parsing (mem=1095.2M) ***
+[04/13 22:36:05     33s] Created 1441 new cells from 5 timing libraries.
+[04/13 22:36:05     33s] Reading netlist ...
+[04/13 22:36:05     33s] Backslashed names will retain backslash and a trailing blank character.
+[04/13 22:36:05     33s] Reading verilog netlist 'inputs/memory_netlist_dft.v'
+[04/13 22:36:05     33s] 
+[04/13 22:36:05     33s] *** Memory Usage v#1 (Current mem = 1095.215M, initial mem = 483.863M) ***
+[04/13 22:36:05     33s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1095.2M) ***
+[04/13 22:36:05     33s] #% End Load netlist data ... (date=04/13 22:36:05, total cpu=0:00:00.1, real=0:00:00.0, peak res=1087.6M, current mem=1087.6M)
+[04/13 22:36:05     33s] Top level cell is memory.
+[04/13 22:36:05     33s] Hooked 2882 DB cells to tlib cells.
+[04/13 22:36:05     33s] ** Removed 1 unused lib cells.
+[04/13 22:36:05     33s] Ending "BindLib:" (total cpu=0:00:00.2, real=0:00:00.0, peak res=1120.7M, current mem=1120.7M)
+[04/13 22:36:05     33s] Starting recursive module instantiation check.
+[04/13 22:36:05     33s] No recursion found.
+[04/13 22:36:05     33s] Building hierarchical netlist for Cell memory ...
+[04/13 22:36:05     33s] *** Netlist is unique.
+[04/13 22:36:05     33s] Setting Std. cell height to 3420 DBU (smallest netlist inst).
+[04/13 22:36:05     33s] ** info: there are 3000 modules.
+[04/13 22:36:05     33s] ** info: there are 789 stdCell insts.
+[04/13 22:36:05     33s] 
+[04/13 22:36:05     33s] *** Memory Usage v#1 (Current mem = 1168.629M, initial mem = 483.863M) ***
+[04/13 22:36:05     33s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[04/13 22:36:05     33s] Type 'man IMPFP-3961' for more detail.
+[04/13 22:36:05     33s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[04/13 22:36:05     33s] Type 'man IMPFP-3961' for more detail.
+[04/13 22:36:05     33s] Start create_tracks
+[04/13 22:36:05     33s] Extraction setup Started 
+[04/13 22:36:05     33s] 
+[04/13 22:36:05     33s] Trim Metal Layers:
+[04/13 22:36:05     33s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[04/13 22:36:05     33s] **WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+[04/13 22:36:05     33s] Type 'man IMPEXT-6202' for more detail.
+[04/13 22:36:05     33s] Reading Capacitance Table File ../libs/qrc/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl ...
+[04/13 22:36:05     33s] Cap table was created using Encounter 10.10-b056_1.
+[04/13 22:36:05     33s] Process name: cln28hpl_1p10m+alrdl_5x2yu2yz_typical.
+[04/13 22:36:05     33s] Set Shrink Factor to 0.90000
+[04/13 22:36:05     34s] Importing multi-corner RC tables ... 
+[04/13 22:36:05     34s] Summary of Active RC-Corners : 
+[04/13 22:36:05     34s]  
+[04/13 22:36:05     34s]  Analysis View: func_ss
+[04/13 22:36:05     34s]     RC-Corner Name        : typical
+[04/13 22:36:05     34s]     RC-Corner Index       : 0
+[04/13 22:36:05     34s]     RC-Corner Temperature : 25 Celsius
+[04/13 22:36:05     34s]     RC-Corner Cap Table   : '../libs/qrc/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl'
+[04/13 22:36:05     34s]     RC-Corner PreRoute Res Factor         : 1
+[04/13 22:36:05     34s]     RC-Corner PreRoute Cap Factor         : 1
+[04/13 22:36:05     34s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[04/13 22:36:05     34s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[04/13 22:36:05     34s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[04/13 22:36:05     34s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[04/13 22:36:05     34s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[04/13 22:36:05     34s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[04/13 22:36:05     34s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[04/13 22:36:05     34s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[04/13 22:36:05     34s]     RC-Corner Technology file: '../libs/qrc/gpdk045.tch'
+[04/13 22:36:05     34s]  
+[04/13 22:36:05     34s]  Analysis View: func_ff
+[04/13 22:36:05     34s]     RC-Corner Name        : typical
+[04/13 22:36:05     34s]     RC-Corner Index       : 0
+[04/13 22:36:05     34s]     RC-Corner Temperature : 25 Celsius
+[04/13 22:36:05     34s]     RC-Corner Cap Table   : '../libs/qrc/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl'
+[04/13 22:36:05     34s]     RC-Corner PreRoute Res Factor         : 1
+[04/13 22:36:05     34s]     RC-Corner PreRoute Cap Factor         : 1
+[04/13 22:36:05     34s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[04/13 22:36:05     34s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[04/13 22:36:05     34s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[04/13 22:36:05     34s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[04/13 22:36:05     34s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[04/13 22:36:05     34s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[04/13 22:36:05     34s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[04/13 22:36:05     34s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[04/13 22:36:05     34s]     RC-Corner Technology file: '../libs/qrc/gpdk045.tch'
+[04/13 22:36:05     34s] 
+[04/13 22:36:05     34s] Trim Metal Layers:
+[04/13 22:36:05     34s] LayerId::1 widthSet size::4
+[04/13 22:36:05     34s] LayerId::2 widthSet size::4
+[04/13 22:36:05     34s] LayerId::3 widthSet size::4
+[04/13 22:36:05     34s] LayerId::4 widthSet size::4
+[04/13 22:36:05     34s] LayerId::5 widthSet size::4
+[04/13 22:36:05     34s] LayerId::6 widthSet size::4
+[04/13 22:36:05     34s] LayerId::7 widthSet size::5
+[04/13 22:36:05     34s] LayerId::8 widthSet size::5
+[04/13 22:36:05     34s] LayerId::9 widthSet size::5
+[04/13 22:36:05     34s] LayerId::10 widthSet size::4
+[04/13 22:36:05     34s] LayerId::11 widthSet size::3
+[04/13 22:36:05     34s] Updating RC grid for preRoute extraction ...
+[04/13 22:36:05     34s] eee: pegSigSF::1.070000
+[04/13 22:36:05     34s] Initializing multi-corner capacitance tables ... 
+[04/13 22:36:05     34s] Initializing multi-corner resistance tables ...
+[04/13 22:36:05     34s] Creating RPSQ from WeeR and WRes ...
+[04/13 22:36:05     34s] eee: l::1 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[04/13 22:36:05     34s] eee: l::2 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[04/13 22:36:05     34s] eee: l::3 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[04/13 22:36:05     34s] eee: l::4 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[04/13 22:36:05     34s] eee: l::5 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[04/13 22:36:05     34s] eee: l::6 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[04/13 22:36:05     34s] eee: l::7 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[04/13 22:36:05     34s] eee: l::8 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[04/13 22:36:05     34s] eee: l::9 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[04/13 22:36:05     34s] eee: l::10 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[04/13 22:36:05     34s] eee: l::11 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[04/13 22:36:05     34s] {RT typical 0 11 11 {7 0} {10 0} 2}
+[04/13 22:36:05     34s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.000000 uaWl=0.000000 uaWlH=0.000000 aWlH=0.000000 lMod=0 pMax=0.850000 pMod=82 wcR=0.772700 newSi=0.000000 wHLS=1.931750 siPrev=0 viaL=0.000000
+[04/13 22:36:05     34s] *Info: initialize multi-corner CTS.
+[04/13 22:36:05     34s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1387.9M, current mem=1133.4M)
+[04/13 22:36:05     34s] Reading timing constraints file 'inputs/memory_sdc_dft.sdc' ...
+[04/13 22:36:05     34s] Current (total cpu=0:00:34.2, real=0:01:23, peak res=1407.6M, current mem=1407.6M)
+[04/13 22:36:05     34s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File inputs/memory_sdc_dft.sdc, Line 9).
+[04/13 22:36:05     34s] 
+[04/13 22:36:05     34s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File inputs/memory_sdc_dft.sdc, Line 10).
+[04/13 22:36:05     34s] 
+[04/13 22:36:05     34s] **WARN: (TCLCMD-1142):	Virtual clock 'vclk' is being created with no source objects. (File inputs/memory_sdc_dft.sdc, Line 16).
+[04/13 22:36:05     34s] 
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (IMPCTE-290):	Could not locate cell BUFX12 in any library for view func_ss.
+[04/13 22:36:05     34s] Type 'man IMPCTE-290' for more detail.
+[04/13 22:36:05     34s] **WARN: (EMS-27):	Message (IMPCTE-290) has exceeded the current message display limit of 20.
+[04/13 22:36:05     34s] To increase the message display limit, refer to the product command reference manual.
+[04/13 22:36:05     34s] INFO (CTE): Reading of timing constraints file inputs/memory_sdc_dft.sdc completed, with 3 WARNING
+[04/13 22:36:06     34s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:01.0, peak res=1428.1M, current mem=1428.1M)
+[04/13 22:36:06     34s] Current (total cpu=0:00:34.3, real=0:01:24, peak res=1428.1M, current mem=1428.1M)
+[04/13 22:36:06     34s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[04/13 22:36:06     34s] 
+[04/13 22:36:06     34s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[04/13 22:36:06     34s] Summary for sequential cells identification: 
+[04/13 22:36:06     34s]   Identified SBFF number: 312
+[04/13 22:36:06     34s]   Identified MBFF number: 0
+[04/13 22:36:06     34s]   Identified SB Latch number: 0
+[04/13 22:36:06     34s]   Identified MB Latch number: 0
+[04/13 22:36:06     34s]   Not identified SBFF number: 48
+[04/13 22:36:06     34s]   Not identified MBFF number: 0
+[04/13 22:36:06     34s]   Not identified SB Latch number: 0
+[04/13 22:36:06     34s]   Not identified MB Latch number: 0
+[04/13 22:36:06     34s]   Number of sequential cells which are not FFs: 96
+[04/13 22:36:06     34s] Total number of combinational cells: 954
+[04/13 22:36:06     34s] Total number of sequential cells: 456
+[04/13 22:36:06     34s] Total number of tristate cells: 30
+[04/13 22:36:06     34s] Total number of level shifter cells: 0
+[04/13 22:36:06     34s] Total number of power gating cells: 0
+[04/13 22:36:06     34s] Total number of isolation cells: 0
+[04/13 22:36:06     34s] Total number of power switch cells: 0
+[04/13 22:36:06     34s] Total number of pulse generator cells: 0
+[04/13 22:36:06     34s] Total number of always on buffers: 0
+[04/13 22:36:06     34s] Total number of retention cells: 0
+[04/13 22:36:06     34s] List of usable buffers: BUFX2LVT BUFX12LVT BUFX16LVT BUFX20LVT CLKBUFX2LVT BUFX3LVT BUFX4LVT BUFX6LVT BUFX8LVT CLKBUFX12LVT CLKBUFX16LVT CLKBUFX20LVT CLKBUFX3LVT CLKBUFX4LVT CLKBUFX6LVT CLKBUFX8LVT DLY1X1LVT DLY1X4LVT BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8 BUFX2HVT BUFX12HVT BUFX16HVT BUFX20HVT CLKBUFX2HVT BUFX3HVT BUFX4HVT BUFX6HVT BUFX8HVT CLKBUFX12HVT CLKBUFX16HVT CLKBUFX20HVT CLKBUFX3HVT CLKBUFX4HVT CLKBUFX6HVT CLKBUFX8HVT
+[04/13 22:36:06     34s] Total number of usable buffers: 50
+[04/13 22:36:06     34s] List of unusable buffers:
+[04/13 22:36:06     34s] Total number of unusable buffers: 0
+[04/13 22:36:06     34s] List of usable inverters: CLKINVX1LVT CLKINVX2LVT CLKINVX12LVT CLKINVX16LVT CLKINVX20LVT CLKINVX4LVT CLKINVX3LVT CLKINVX6LVT CLKINVX8LVT INVX1LVT INVX2LVT INVX12LVT INVX16LVT INVX20LVT INVX3LVT INVX4LVT INVX6LVT INVX8LVT INVXLLVT CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVX3 INVX4 INVX6 INVX8 INVXL CLKINVX1HVT CLKINVX2HVT CLKINVX12HVT CLKINVX16HVT CLKINVX20HVT CLKINVX4HVT CLKINVX3HVT CLKINVX6HVT CLKINVX8HVT INVX1HVT INVX2HVT INVX12HVT INVX16HVT INVX20HVT INVXLHVT INVX3HVT INVX4HVT INVX6HVT INVX8HVT
+[04/13 22:36:06     34s] Total number of usable inverters: 57
+[04/13 22:36:06     34s] List of unusable inverters:
+[04/13 22:36:06     34s] Total number of unusable inverters: 0
+[04/13 22:36:06     34s] List of identified usable delay cells: DLY2X1LVT DLY2X4LVT DLY3X1LVT DLY3X4LVT DLY4X1LVT DLY4X4LVT DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4 DLY1X1HVT DLY1X4HVT DLY2X1HVT DLY2X4HVT DLY3X1HVT DLY3X4HVT DLY4X1HVT DLY4X4HVT
+[04/13 22:36:06     34s] Total number of identified usable delay cells: 22
+[04/13 22:36:06     34s] List of identified unusable delay cells:
+[04/13 22:36:06     34s] Total number of identified unusable delay cells: 0
+[04/13 22:36:06     34s] 
+[04/13 22:36:06     34s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[04/13 22:36:06     34s] 
+[04/13 22:36:06     34s] TimeStamp Deleting Cell Server Begin ...
+[04/13 22:36:06     34s] 
+[04/13 22:36:06     34s] TimeStamp Deleting Cell Server End ...
+[04/13 22:36:06     34s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1451.5M, current mem=1451.4M)
+[04/13 22:36:06     34s] 
+[04/13 22:36:06     34s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[04/13 22:36:06     34s] Summary for sequential cells identification: 
+[04/13 22:36:06     34s]   Identified SBFF number: 312
+[04/13 22:36:06     34s]   Identified MBFF number: 0
+[04/13 22:36:06     34s]   Identified SB Latch number: 0
+[04/13 22:36:06     34s]   Identified MB Latch number: 0
+[04/13 22:36:06     34s]   Not identified SBFF number: 48
+[04/13 22:36:06     34s]   Not identified MBFF number: 0
+[04/13 22:36:06     34s]   Not identified SB Latch number: 0
+[04/13 22:36:06     34s]   Not identified MB Latch number: 0
+[04/13 22:36:06     34s]   Number of sequential cells which are not FFs: 96
+[04/13 22:36:06     34s]  Visiting view : func_ss
+[04/13 22:36:06     34s]    : PowerDomain = none : Weighted F : unweighted  = 24.50 (1.000) with rcCorner = 0
+[04/13 22:36:06     34s]    : PowerDomain = none : Weighted F : unweighted  = 12.70 (1.000) with rcCorner = -1
+[04/13 22:36:06     34s]  Visiting view : func_ff
+[04/13 22:36:06     34s]    : PowerDomain = none : Weighted F : unweighted  = 8.80 (1.000) with rcCorner = 0
+[04/13 22:36:06     34s]    : PowerDomain = none : Weighted F : unweighted  = 4.10 (1.000) with rcCorner = -1
+[04/13 22:36:06     34s] TLC MultiMap info (StdDelay):
+[04/13 22:36:06     34s]   : fast_cnom + fast + 1 + no RcCorner := 4.1ps
+[04/13 22:36:06     34s]   : fast_cnom + fast + 1 + typical := 8.8ps
+[04/13 22:36:06     34s]   : ss_cnom + slow + 1 + no RcCorner := 12.7ps
+[04/13 22:36:06     34s]   : ss_cnom + slow + 1 + typical := 24.5ps
+[04/13 22:36:06     34s]  Setting StdDelay to: 24.5ps
+[04/13 22:36:06     34s] 
+[04/13 22:36:06     34s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[04/13 22:36:06     34s] 
+[04/13 22:36:06     34s] TimeStamp Deleting Cell Server Begin ...
+[04/13 22:36:06     34s] 
+[04/13 22:36:06     34s] TimeStamp Deleting Cell Server End ...
+[04/13 22:36:06     34s] 
+[04/13 22:36:06     34s] *** Summary of all messages that are not suppressed in this session:
+[04/13 22:36:06     34s] Severity  ID               Count  Summary                                  
+[04/13 22:36:06     34s] WARNING   IMPLF-200            3  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[04/13 22:36:06     34s] WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+[04/13 22:36:06     34s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[04/13 22:36:06     34s] WARNING   IMPCTE-290          96  Could not locate cell %s in any library ...
+[04/13 22:36:06     34s] WARNING   TCLCMD-1142          1  Virtual clock '%s' is being created with...
+[04/13 22:36:06     34s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[04/13 22:36:06     34s] WARNING   TECHLIB-302         10  No function defined for cell '%s'. The c...
+[04/13 22:36:06     34s] WARNING   TECHLIB-459          3  Appending library '%s' to the previously...
+[04/13 22:36:06     34s] ERROR     TECHLIB-1198         2  The 'index_%d' is defined but its corres...
+[04/13 22:36:06     34s] *** Message Summary: 118 warning(s), 2 error(s)
+[04/13 22:36:06     34s] 
+[04/13 22:36:50     41s] **ERROR: (IMPDBTCL-4001):	Failed to set the 'Pstatus' attribute, because the object is not specified. Check and correct the command usage.
+
+[04/13 22:36:50     41s] <CMD> deleteHaloFromBlock -allMacro
+[04/13 22:36:50     41s] <CMD> addHaloToBlock -allMacro -snapToSite 1 1 1 1
+[04/13 22:36:50     41s] <CMD> deletePlaceBlockage -all
+[04/13 22:36:50     41s] <CMD> finishFloorplan -fillPlaceBlockage soft 15
+[04/13 22:36:50     41s] *** Done finishFloorplan, (cpu = 0:00:00.0, mem = 1532.7M, mem_delta = 0.0M) ***
+[04/13 22:36:50     41s] <CMD> deleteFiller -prefix END
+[04/13 22:36:50     41s] OPERPROF: Starting PlacementDelFiller
+ at level 1, MEM:1532.7M, EPOCH TIME: 1776100010.679399
+[04/13 22:36:50     41s] Deleted 0 physical inst  (cell - / prefix END).
+[04/13 22:36:50     41s] OPERPROF: Finished PlacementDelFiller
+ at level 1, CPU:0.000, REAL:0.000, MEM:1532.7M, EPOCH TIME: 1776100010.679546
+[04/13 22:36:50     41s] <CMD> setEndCapMode -leftEdge FILL2 -rightEdge FILL2
+[04/13 22:36:50     41s] <CMD> addEndCap -prefix ENDCAP
+[04/13 22:36:50     41s] **WARN: (IMPSP-5534):	'setEndCapMode -leftEdge' and 'setEndCapMode -rightEdge' are using the same endcap cells
+[04/13 22:36:50     41s] **WARN: (IMPSP-5534):	'setEndCapMode -leftBottomCorner' and 'setEndCapMode -rightBottomCorner' are using the same endcap cells
+[04/13 22:36:50     41s] **WARN: (IMPSP-5534):	'setEndCapMode -leftTopCorner' and 'setEndCapMode -rightTopCorner' are using the same endcap cells
+[04/13 22:36:50     41s] # Resetting pin-track-align track data.
+[04/13 22:36:50     41s] OPERPROF: Starting DPlace-Init-For-Physical at level 1, MEM:1532.7M, EPOCH TIME: 1776100010.682822
+[04/13 22:36:50     41s] OPERPROF:   Starting DPlace-Init at level 2, MEM:1532.7M, EPOCH TIME: 1776100010.682934
+[04/13 22:36:50     41s] Processing tracks to init pin-track alignment.
+[04/13 22:36:50     41s] z: 2, totalTracks: 1
+[04/13 22:36:50     41s] z: 4, totalTracks: 1
+[04/13 22:36:50     41s] z: 6, totalTracks: 1
+[04/13 22:36:50     41s] z: 8, totalTracks: 1
+[04/13 22:36:50     42s] #spOpts: VtWidth hrOri=1 hrSnap=1 rpCkHalo=4 
+[04/13 22:36:50     42s] All LLGs are deleted
+[04/13 22:36:50     42s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[04/13 22:36:50     42s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[04/13 22:36:50     42s] OPERPROF:     Starting spSiteCleanup(true) at level 3, MEM:1532.7M, EPOCH TIME: 1776100010.952839
+[04/13 22:36:50     42s] OPERPROF:     Finished spSiteCleanup(true) at level 3, CPU:0.001, REAL:0.001, MEM:1532.7M, EPOCH TIME: 1776100010.953861
+[04/13 22:36:50     42s] # Building memory llgBox search-tree.
+[04/13 22:36:50     42s] OPERPROF:     Starting spInitSiteArr at level 3, MEM:1532.7M, EPOCH TIME: 1776100010.953971
+[04/13 22:36:50     42s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[04/13 22:36:50     42s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[04/13 22:36:50     42s] OPERPROF:       Starting spiInitFpSiteArr at level 4, MEM:1532.7M, EPOCH TIME: 1776100010.957041
+[04/13 22:36:50     42s] Max number of tech site patterns supported in site array is 256.
+[04/13 22:36:50     42s] Core basic site is CoreSite
+[04/13 22:36:51     42s] OPERPROF:         Starting spiCheckSiteIfFastDPInitAvailable at level 5, MEM:1532.7M, EPOCH TIME: 1776100011.011732
+[04/13 22:36:51     42s] After signature check, allow fast init is false, keep pre-filter is false.
+[04/13 22:36:51     42s] After signature check and other controls, allow fast init is false, keep pre-filter is false.
+[04/13 22:36:51     42s] OPERPROF:         Finished spiCheckSiteIfFastDPInitAvailable at level 5, CPU:0.000, REAL:0.000, MEM:1532.7M, EPOCH TIME: 1776100011.011889
+[04/13 22:36:51     42s] Use non-trimmed site array because memory saving is not enough.
+[04/13 22:36:51     42s] SiteArray: non-trimmed site array dimensions = 39 x 343
+[04/13 22:36:51     42s] SiteArray: use 102,400 bytes
+[04/13 22:36:51     42s] SiteArray: current memory after site array memory allocation 1532.8M
+[04/13 22:36:51     42s] SiteArray: FP blocked sites are writable
+[04/13 22:36:51     42s] Estimated cell power/ground rail width = 0.213 um
+[04/13 22:36:51     42s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[04/13 22:36:51     42s] OPERPROF:         Starting RoutingBlockageFromWireViaStBox at level 5, MEM:1532.8M, EPOCH TIME: 1776100011.013048
+[04/13 22:36:51     42s] OPERPROF:         Finished RoutingBlockageFromWireViaStBox at level 5, CPU:0.000, REAL:0.000, MEM:1532.8M, EPOCH TIME: 1776100011.013095
+[04/13 22:36:51     42s] SiteArray: number of non floorplan blocked sites for llg default is 13377
+[04/13 22:36:51     42s] Atter site array init, number of instance map data is 0.
+[04/13 22:36:51     42s] OPERPROF:       Finished spiInitFpSiteArr at level 4, CPU:0.058, REAL:0.058, MEM:1532.8M, EPOCH TIME: 1776100011.015197
+[04/13 22:36:51     42s] 
+[04/13 22:36:51     42s]  Pre_CCE_Colorizing is not ON! (0:0:1559:0)
+[04/13 22:36:51     42s] OPERPROF:     Finished spInitSiteArr at level 3, CPU:0.062, REAL:0.062, MEM:1532.8M, EPOCH TIME: 1776100011.015728
+[04/13 22:36:51     42s] OPERPROF:     Starting PlacementInitSBTree at level 3, MEM:1532.8M, EPOCH TIME: 1776100011.015776
+[04/13 22:36:51     42s] OPERPROF:     Finished PlacementInitSBTree at level 3, CPU:0.000, REAL:0.000, MEM:1532.8M, EPOCH TIME: 1776100011.015818
+[04/13 22:36:51     42s] [CPU] DPlace-Init (cpu=0:00:00.3, real=0:00:01.0, mem=1532.8MB).
+[04/13 22:36:51     42s] OPERPROF:   Finished DPlace-Init at level 2, CPU:0.332, REAL:0.333, MEM:1532.8M, EPOCH TIME: 1776100011.015975
+[04/13 22:36:51     42s] OPERPROF: Finished DPlace-Init-For-Physical at level 1, CPU:0.332, REAL:0.333, MEM:1532.8M, EPOCH TIME: 1776100011.016012
+[04/13 22:36:51     42s] OPERPROF: Starting ECCreateSitePattern at level 1, MEM:1532.8M, EPOCH TIME: 1776100011.016117
+[04/13 22:36:51     42s] OPERPROF: Finished ECCreateSitePattern at level 1, CPU:0.000, REAL:0.000, MEM:1532.8M, EPOCH TIME: 1776100011.016214
+[04/13 22:36:51     42s] Minimum row-size in sites for endcap insertion = 5.
+[04/13 22:36:51     42s] Minimum number of sites for row blockage       = 1.
+[04/13 22:36:51     42s] Inserted 39 pre-endcap <FILL2> cells (prefix ENDCAP).
+[04/13 22:36:51     42s] Inserted 39 post-endcap <FILL2> cells (prefix ENDCAP).
+[04/13 22:36:51     42s] OPERPROF: Starting DB-Batch-Applying-GNC-RULES at level 1, MEM:1532.8M, EPOCH TIME: 1776100011.017906
+[04/13 22:36:51     42s] For 78 new insts, OPERPROF: Finished DB-Batch-Applying-GNC-RULES at level 1, CPU:0.000, REAL:0.000, MEM:1532.8M, EPOCH TIME: 1776100011.018041
+[04/13 22:36:51     42s] OPERPROF: Starting spDPlaceCleanup(full) at level 1, MEM:1532.8M, EPOCH TIME: 1776100011.018110
+[04/13 22:36:51     42s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:78).
+[04/13 22:36:51     42s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[04/13 22:36:51     42s] All LLGs are deleted
+[04/13 22:36:51     42s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[04/13 22:36:51     42s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[04/13 22:36:51     42s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1532.8M, EPOCH TIME: 1776100011.020037
+[04/13 22:36:51     42s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.001, REAL:0.001, MEM:1532.7M, EPOCH TIME: 1776100011.020744
+[04/13 22:36:51     42s] OPERPROF: Finished spDPlaceCleanup(full) at level 1, CPU:0.005, REAL:0.005, MEM:1525.7M, EPOCH TIME: 1776100011.023338
+[04/13 22:36:51     42s] <CMD> addWellTap -checkerBoard -cell FILL2 -prefix TAP -fixedGap -cellInterval 45
+[04/13 22:36:51     42s] skipRow option will be disabled when checkerBoard is set
+[04/13 22:36:51     42s] OPERPROF: Starting DPlace-Init-For-Physical at level 1, MEM:1525.7M, EPOCH TIME: 1776100011.031465
+[04/13 22:36:51     42s] OPERPROF:   Starting DPlace-Init at level 2, MEM:1525.7M, EPOCH TIME: 1776100011.031587
+[04/13 22:36:51     42s] Processing tracks to init pin-track alignment.
+[04/13 22:36:51     42s] z: 2, totalTracks: 1
+[04/13 22:36:51     42s] z: 4, totalTracks: 1
+[04/13 22:36:51     42s] z: 6, totalTracks: 1
+[04/13 22:36:51     42s] z: 8, totalTracks: 1
+[04/13 22:36:51     42s] #spOpts: VtWidth mergeVia=F hrOri=1 hrSnap=1 rpCkHalo=4 
+[04/13 22:36:51     42s] All LLGs are deleted
+[04/13 22:36:51     42s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[04/13 22:36:51     42s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[04/13 22:36:51     42s] OPERPROF:     Starting spSiteCleanup(true) at level 3, MEM:1525.7M, EPOCH TIME: 1776100011.037316
+[04/13 22:36:51     42s] OPERPROF:     Finished spSiteCleanup(true) at level 3, CPU:0.001, REAL:0.001, MEM:1525.7M, EPOCH TIME: 1776100011.038562
+[04/13 22:36:51     42s] # Building memory llgBox search-tree.
+[04/13 22:36:51     42s] OPERPROF:     Starting spInitSiteArr at level 3, MEM:1525.7M, EPOCH TIME: 1776100011.038676
+[04/13 22:36:51     42s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[04/13 22:36:51     42s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[04/13 22:36:51     42s] OPERPROF:       Starting spiInitFpSiteArr at level 4, MEM:1525.7M, EPOCH TIME: 1776100011.041828
+[04/13 22:36:51     42s] Max number of tech site patterns supported in site array is 256.
+[04/13 22:36:51     42s] Core basic site is CoreSite
+[04/13 22:36:51     42s] OPERPROF:         Starting spiCheckSiteIfFastDPInitAvailable at level 5, MEM:1525.7M, EPOCH TIME: 1776100011.098821
+[04/13 22:36:51     42s] After signature check, allow fast init is true, keep pre-filter is true.
+[04/13 22:36:51     42s] After signature check and other controls, allow fast init is false, keep pre-filter is false.
+[04/13 22:36:51     42s] OPERPROF:         Finished spiCheckSiteIfFastDPInitAvailable at level 5, CPU:0.000, REAL:0.000, MEM:1525.7M, EPOCH TIME: 1776100011.098965
+[04/13 22:36:51     42s] SiteArray: non-trimmed site array dimensions = 39 x 343
+[04/13 22:36:51     42s] SiteArray: use 102,400 bytes
+[04/13 22:36:51     42s] SiteArray: current memory after site array memory allocation 1525.8M
+[04/13 22:36:51     42s] SiteArray: FP blocked sites are writable
+[04/13 22:36:51     42s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[04/13 22:36:51     42s] OPERPROF:         Starting RoutingBlockageFromWireViaStBox at level 5, MEM:1525.8M, EPOCH TIME: 1776100011.099994
+[04/13 22:36:51     42s] OPERPROF:         Finished RoutingBlockageFromWireViaStBox at level 5, CPU:0.000, REAL:0.000, MEM:1525.8M, EPOCH TIME: 1776100011.100040
+[04/13 22:36:51     42s] SiteArray: number of non floorplan blocked sites for llg default is 13377
+[04/13 22:36:51     42s] Atter site array init, number of instance map data is 0.
+[04/13 22:36:51     42s] OPERPROF:       Finished spiInitFpSiteArr at level 4, CPU:0.060, REAL:0.060, MEM:1525.8M, EPOCH TIME: 1776100011.101873
+[04/13 22:36:51     42s] 
+[04/13 22:36:51     42s]  Pre_CCE_Colorizing is not ON! (0:0:1559:0)
+[04/13 22:36:51     42s] OPERPROF:     Finished spInitSiteArr at level 3, CPU:0.064, REAL:0.064, MEM:1525.8M, EPOCH TIME: 1776100011.102651
+[04/13 22:36:51     42s] OPERPROF:     Starting PlacementInitSBTree at level 3, MEM:1525.8M, EPOCH TIME: 1776100011.102700
+[04/13 22:36:51     42s] OPERPROF:     Finished PlacementInitSBTree at level 3, CPU:0.000, REAL:0.000, MEM:1525.8M, EPOCH TIME: 1776100011.102741
+[04/13 22:36:51     42s] [CPU] DPlace-Init (cpu=0:00:00.1, real=0:00:00.0, mem=1525.8MB).
+[04/13 22:36:51     42s] OPERPROF:   Finished DPlace-Init at level 2, CPU:0.071, REAL:0.071, MEM:1525.8M, EPOCH TIME: 1776100011.102882
+[04/13 22:36:51     42s] OPERPROF: Finished DPlace-Init-For-Physical at level 1, CPU:0.071, REAL:0.071, MEM:1525.8M, EPOCH TIME: 1776100011.102918
+[04/13 22:36:51     42s] For 62 new insts, OPERPROF: Starting spDPlaceCleanup(full) at level 1, MEM:1526.8M, EPOCH TIME: 1776100011.104550
+[04/13 22:36:51     42s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:140).
+[04/13 22:36:51     42s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[04/13 22:36:51     42s] All LLGs are deleted
+[04/13 22:36:51     42s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[04/13 22:36:51     42s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[04/13 22:36:51     42s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1526.8M, EPOCH TIME: 1776100011.106223
+[04/13 22:36:51     42s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.001, REAL:0.001, MEM:1526.7M, EPOCH TIME: 1776100011.106828
+[04/13 22:36:51     42s] OPERPROF: Finished spDPlaceCleanup(full) at level 1, CPU:0.004, REAL:0.004, MEM:1526.7M, EPOCH TIME: 1776100011.108910
+[04/13 22:36:51     42s] Inserted 62 well-taps <FILL2> cells (prefix TAP).
+[04/13 22:36:51     42s] <CMD> verifyWellTap -cell FILL2 -rule 45
+[04/13 22:36:51     42s] Begin to run verifyWellTap...
+[04/13 22:36:51     42s] init: done
+[04/13 22:36:51     42s] checking rule
+[04/13 22:36:51     42s] Finished verifyWellTap, 0 violations found.
+[04/13 22:36:51     42s] <CMD> saveDesign ./design/physicalcells_placed.enc
+[04/13 22:36:51     42s] #% Begin save design ... (date=04/13 22:36:51, mem=1515.3M)
+[04/13 22:36:51     42s] % Begin Save ccopt configuration ... (date=04/13 22:36:51, mem=1515.5M)
+[04/13 22:36:51     42s] % End Save ccopt configuration ... (date=04/13 22:36:51, total cpu=0:00:00.0, real=0:00:00.0, peak res=1516.7M, current mem=1516.7M)
+[04/13 22:36:51     42s] % Begin Save netlist data ... (date=04/13 22:36:51, mem=1516.7M)
+[04/13 22:36:51     42s] Writing Binary DB to ./design/physicalcells_placed.enc.dat/memory.v.bin in single-threaded mode...
+[04/13 22:36:51     42s] % End Save netlist data ... (date=04/13 22:36:51, total cpu=0:00:00.0, real=0:00:00.0, peak res=1517.4M, current mem=1517.4M)
+[04/13 22:36:51     42s] Saving symbol-table file ...
+[04/13 22:36:51     42s] Saving congestion map file ./design/physicalcells_placed.enc.dat/memory.route.congmap.gz ...
+[04/13 22:36:51     42s] % Begin Save AAE data ... (date=04/13 22:36:51, mem=1517.7M)
+[04/13 22:36:51     42s] Saving AAE Data ...
+[04/13 22:36:51     42s] % End Save AAE data ... (date=04/13 22:36:51, total cpu=0:00:00.0, real=0:00:00.0, peak res=1517.7M, current mem=1517.7M)
+[04/13 22:36:51     42s] Saving preference file ./design/physicalcells_placed.enc.dat/gui.pref.tcl ...
+[04/13 22:36:51     42s] Saving mode setting ...
+[04/13 22:36:51     42s] Saving global file ...
+[04/13 22:36:51     42s] % Begin Save floorplan data ... (date=04/13 22:36:51, mem=1522.1M)
+[04/13 22:36:51     42s] Saving floorplan file ...
+[04/13 22:36:52     42s] % End Save floorplan data ... (date=04/13 22:36:52, total cpu=0:00:00.0, real=0:00:01.0, peak res=1524.1M, current mem=1524.1M)
+[04/13 22:36:52     42s] Saving Drc markers ...
+[04/13 22:36:52     42s] ... No Drc file written since there is no markers found.
+[04/13 22:36:52     42s] % Begin Save placement data ... (date=04/13 22:36:52, mem=1524.1M)
+[04/13 22:36:52     42s] ** Saving stdCellPlacement_binary (version# 2) ...
+[04/13 22:36:52     42s] Save Adaptive View Pruning View Names to Binary file
+[04/13 22:36:52     42s] *** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1536.3M) ***
+[04/13 22:36:52     42s] % End Save placement data ... (date=04/13 22:36:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1524.8M, current mem=1524.8M)
+[04/13 22:36:52     42s] % Begin Save routing data ... (date=04/13 22:36:52, mem=1524.8M)
+[04/13 22:36:52     42s] Saving route file ...
+[04/13 22:36:52     42s] *** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1533.3M) ***
+[04/13 22:36:52     42s] % End Save routing data ... (date=04/13 22:36:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1525.1M, current mem=1525.1M)
+[04/13 22:36:52     42s] Saving property file ./design/physicalcells_placed.enc.dat/memory.prop
+[04/13 22:36:52     42s] *** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1536.3M) ***
+[04/13 22:36:52     42s] % Begin Save power constraints data ... (date=04/13 22:36:52, mem=1526.6M)
+[04/13 22:36:52     42s] % End Save power constraints data ... (date=04/13 22:36:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1526.6M, current mem=1526.6M)
+[04/13 22:36:52     42s] Generated self-contained design physicalcells_placed.enc.dat
+[04/13 22:36:52     42s] #% End save design ... (date=04/13 22:36:52, total cpu=0:00:00.4, real=0:00:01.0, peak res=1552.7M, current mem=1529.4M)
+[04/13 22:36:52     42s] *** Message Summary: 0 warning(s), 0 error(s)
+[04/13 22:36:52     42s] 
+[04/13 22:36:52     42s] <CMD> deleteAllPowerPreroutes
+[04/13 22:36:52     42s] <CMD> clearGlobalNets
+[04/13 22:36:52     42s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[04/13 22:36:52     42s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[04/13 22:36:52     42s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 right Metal6 left Metal8} -width {top 1 bottom 1 left 1 right 1} -spacing {top 1 bottom 1 left 1 right 1} -offset {top 1 bottom 1 left 1 right 1}
+[04/13 22:36:52     42s] #% Begin addRing (date=04/13 22:36:52, mem=1530.2M)
+[04/13 22:36:52     42s] 
+[04/13 22:36:52     42s] 
+[04/13 22:36:52     42s] viaInitial starts at Mon Apr 13 22:36:52 2026
+viaInitial ends at Mon Apr 13 22:36:52 2026
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1567.6M)
+[04/13 22:36:52     42s] **WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+[04/13 22:36:52     42s] **WARN: (IMPPP-4051):	Failed to add rings, because the IO cells might contain gaps. Run the 'addIoFiller' command to fill gaps between the cells and try again.
+[04/13 22:36:52     42s] Type 'man IMPPP-4051' for more detail.
+[04/13 22:36:52     42s] #% End addRing (date=04/13 22:36:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1531.5M, current mem=1531.5M)
+[04/13 22:36:52     42s] <CMD> addStripe -nets {VDD VSS} -direction horizontal -layer Metal9 -width 1 -spacing 1 -set_to_set_distance 20 -start_from bottom -start_offset 5 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1
+[04/13 22:36:52     42s] #% Begin addStripe (date=04/13 22:36:52, mem=1531.5M)
+[04/13 22:36:52     42s] 
+[04/13 22:36:52     42s] Initialize fgc environment(mem: 1567.6M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1567.6M)
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_1' instance was increased to (0.000000 0.000000) (0.400000 1.770000) because the VSS pin (0.000000 1.650000) (0.400000 1.770000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_2' instance was increased to (68.199997 0.000000) (68.599998 1.770000) because the VSS pin (68.199997 1.650000) (68.599998 1.770000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_3' instance was increased to (0.000000 1.710000) (0.400000 3.480000) because the VDD pin (0.000000 3.360000) (0.400000 3.480000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_4' instance was increased to (68.199997 1.710000) (68.599998 3.480000) because the VDD pin (68.199997 3.360000) (68.599998 3.480000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_5' instance was increased to (0.000000 3.420000) (0.400000 5.190000) because the VSS pin (0.000000 5.070000) (0.400000 5.190000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_6' instance was increased to (68.199997 3.420000) (68.599998 5.190000) because the VSS pin (68.199997 5.070000) (68.599998 5.190000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_7' instance was increased to (0.000000 5.130000) (0.400000 6.900000) because the VDD pin (0.000000 6.780000) (0.400000 6.900000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_8' instance was increased to (68.199997 5.130000) (68.599998 6.900000) because the VDD pin (68.199997 6.780000) (68.599998 6.900000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_9' instance was increased to (0.000000 6.840000) (0.400000 8.610000) because the VSS pin (0.000000 8.490000) (0.400000 8.610000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_10' instance was increased to (68.199997 6.840000) (68.599998 8.610000) because the VSS pin (68.199997 8.490000) (68.599998 8.610000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_11' instance was increased to (0.000000 8.550000) (0.400000 10.320000) because the VDD pin (0.000000 10.200000) (0.400000 10.320000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_12' instance was increased to (68.199997 8.550000) (68.599998 10.320000) because the VDD pin (68.199997 10.200000) (68.599998 10.320000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_13' instance was increased to (0.000000 10.260000) (0.400000 12.030000) because the VSS pin (0.000000 11.910000) (0.400000 12.030000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_14' instance was increased to (68.199997 10.260000) (68.599998 12.030000) because the VSS pin (68.199997 11.910000) (68.599998 12.030000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_15' instance was increased to (0.000000 11.970000) (0.400000 13.740000) because the VDD pin (0.000000 13.620000) (0.400000 13.740000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_16' instance was increased to (68.199997 11.970000) (68.599998 13.740000) because the VDD pin (68.199997 13.620000) (68.599998 13.740000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_17' instance was increased to (0.000000 13.680000) (0.400000 15.450000) because the VSS pin (0.000000 15.330000) (0.400000 15.450000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_18' instance was increased to (68.199997 13.680000) (68.599998 15.450000) because the VSS pin (68.199997 15.330000) (68.599998 15.450000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_19' instance was increased to (0.000000 15.390000) (0.400000 17.160000) because the VDD pin (0.000000 17.040001) (0.400000 17.160000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_20' instance was increased to (68.199997 15.390000) (68.599998 17.160000) because the VDD pin (68.199997 17.040001) (68.599998 17.160000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (EMS-27):	Message (IMPPP-133) has exceeded the current message display limit of 20.
+[04/13 22:36:52     42s] To increase the message display limit, refer to the product command reference manual.
+[04/13 22:36:52     42s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1567.6M)
+[04/13 22:36:52     42s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1567.6M)
+[04/13 22:36:52     42s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1567.6M)
+[04/13 22:36:52     42s] Starting stripe generation ...
+[04/13 22:36:52     42s] Non-Default Mode Option Settings :
+[04/13 22:36:52     42s]   NONE
+[04/13 22:36:52     42s] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[04/13 22:36:52     42s] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[04/13 22:36:52     42s] Stripe generation is complete.
+[04/13 22:36:52     42s] vias are now being generated.
+[04/13 22:36:52     42s] addStripe created 7 wires.
+[04/13 22:36:52     42s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[04/13 22:36:52     42s] +--------+----------------+----------------+
+[04/13 22:36:52     42s] |  Layer |     Created    |     Deleted    |
+[04/13 22:36:52     42s] +--------+----------------+----------------+
+[04/13 22:36:52     42s] | Metal9 |        7       |       NA       |
+[04/13 22:36:52     42s] +--------+----------------+----------------+
+[04/13 22:36:52     42s] #% End addStripe (date=04/13 22:36:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1533.9M, current mem=1533.9M)
+[04/13 22:36:52     42s] <CMD> addStripe -nets {VDD VSS} -direction vertical -layer Metal8 -width 1 -spacing 1 -set_to_set_distance 20 -start_from left -start_offset 6 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1
+[04/13 22:36:52     42s] #% Begin addStripe (date=04/13 22:36:52, mem=1533.9M)
+[04/13 22:36:52     42s] 
+[04/13 22:36:52     42s] Initialize fgc environment(mem: 1567.6M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1567.6M)
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_1' instance was increased to (0.000000 0.000000) (0.400000 1.770000) because the VSS pin (0.000000 1.650000) (0.400000 1.770000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_2' instance was increased to (68.199997 0.000000) (68.599998 1.770000) because the VSS pin (68.199997 1.650000) (68.599998 1.770000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_3' instance was increased to (0.000000 1.710000) (0.400000 3.480000) because the VDD pin (0.000000 3.360000) (0.400000 3.480000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_4' instance was increased to (68.199997 1.710000) (68.599998 3.480000) because the VDD pin (68.199997 3.360000) (68.599998 3.480000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_5' instance was increased to (0.000000 3.420000) (0.400000 5.190000) because the VSS pin (0.000000 5.070000) (0.400000 5.190000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_6' instance was increased to (68.199997 3.420000) (68.599998 5.190000) because the VSS pin (68.199997 5.070000) (68.599998 5.190000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_7' instance was increased to (0.000000 5.130000) (0.400000 6.900000) because the VDD pin (0.000000 6.780000) (0.400000 6.900000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_8' instance was increased to (68.199997 5.130000) (68.599998 6.900000) because the VDD pin (68.199997 6.780000) (68.599998 6.900000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_9' instance was increased to (0.000000 6.840000) (0.400000 8.610000) because the VSS pin (0.000000 8.490000) (0.400000 8.610000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_10' instance was increased to (68.199997 6.840000) (68.599998 8.610000) because the VSS pin (68.199997 8.490000) (68.599998 8.610000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_11' instance was increased to (0.000000 8.550000) (0.400000 10.320000) because the VDD pin (0.000000 10.200000) (0.400000 10.320000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_12' instance was increased to (68.199997 8.550000) (68.599998 10.320000) because the VDD pin (68.199997 10.200000) (68.599998 10.320000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_13' instance was increased to (0.000000 10.260000) (0.400000 12.030000) because the VSS pin (0.000000 11.910000) (0.400000 12.030000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_14' instance was increased to (68.199997 10.260000) (68.599998 12.030000) because the VSS pin (68.199997 11.910000) (68.599998 12.030000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_15' instance was increased to (0.000000 11.970000) (0.400000 13.740000) because the VDD pin (0.000000 13.620000) (0.400000 13.740000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_16' instance was increased to (68.199997 11.970000) (68.599998 13.740000) because the VDD pin (68.199997 13.620000) (68.599998 13.740000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_17' instance was increased to (0.000000 13.680000) (0.400000 15.450000) because the VSS pin (0.000000 15.330000) (0.400000 15.450000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_18' instance was increased to (68.199997 13.680000) (68.599998 15.450000) because the VSS pin (68.199997 15.330000) (68.599998 15.450000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_19' instance was increased to (0.000000 15.390000) (0.400000 17.160000) because the VDD pin (0.000000 17.040001) (0.400000 17.160000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (IMPPP-133):	The block boundary of the 'ENDCAP_20' instance was increased to (68.199997 15.390000) (68.599998 17.160000) because the VDD pin (68.199997 17.040001) (68.599998 17.160000) on layer Metal1 was outside the original block boundary.
+[04/13 22:36:52     42s] Type 'man IMPPP-133' for more detail.
+[04/13 22:36:52     42s] **WARN: (EMS-27):	Message (IMPPP-133) has exceeded the current message display limit of 20.
+[04/13 22:36:52     42s] To increase the message display limit, refer to the product command reference manual.
+[04/13 22:36:52     42s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1567.6M)
+[04/13 22:36:52     42s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1567.6M)
+[04/13 22:36:52     42s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1567.6M)
+[04/13 22:36:52     42s] Starting stripe generation ...
+[04/13 22:36:52     42s] Non-Default Mode Option Settings :
+[04/13 22:36:52     42s]   NONE
+[04/13 22:36:52     42s] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[04/13 22:36:52     42s] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[04/13 22:36:52     42s] Stripe generation is complete.
+[04/13 22:36:52     42s] vias are now being generated.
+[04/13 22:36:52     42s] addStripe created 7 wires.
+[04/13 22:36:52     42s] ViaGen created 25 vias, deleted 0 via to avoid violation.
+[04/13 22:36:52     42s] +--------+----------------+----------------+
+[04/13 22:36:52     42s] |  Layer |     Created    |     Deleted    |
+[04/13 22:36:52     42s] +--------+----------------+----------------+
+[04/13 22:36:52     42s] | Metal8 |        7       |       NA       |
+[04/13 22:36:52     42s] |  Via8  |       25       |        0       |
+[04/13 22:36:52     42s] +--------+----------------+----------------+
+[04/13 22:36:52     42s] #% End addStripe (date=04/13 22:36:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1534.6M, current mem=1534.6M)
+[04/13 22:36:52     42s] <CMD> setSrouteMode -viaConnectToShape stripe
+[04/13 22:36:52     42s] <CMD> sroute -connect {blockPin corePin floatingStripe} -layerChangeRange {Metal1(1) Metal9(9)} -blockPinTarget nearestTarget -corePinTarget none -floatingStripeTarget {blockring ring stripe padring ringpin blockpin followpin} -allowJogging 1 -crossoverViaLayerRange {Metal1(1) Metal9(9)} -nets {VDD VSS} -allowlayerChange 1 -blockPin useLef -targetViaLayerRange {Metal1(1) Metal9(9)}
+[04/13 22:36:52     42s] #% Begin sroute (date=04/13 22:36:52, mem=1534.6M)
+[04/13 22:36:52     42s] *** Begin SPECIAL ROUTE on Mon Apr 13 22:36:52 2026 ***
+[04/13 22:36:52     42s] SPECIAL ROUTE ran on directory: /home/digital/Workshop_1BI23EC123/Day_4/Physical_Design
+[04/13 22:36:52     42s] SPECIAL ROUTE ran on machine: cad51 (Linux 4.18.0-425.3.1.el8.x86_64 Xeon 3.00Ghz)
+[04/13 22:36:52     42s] 
+[04/13 22:36:52     42s] Begin option processing ...
+[04/13 22:36:52     42s] srouteConnectPowerBump set to false
+[04/13 22:36:52     42s] routeSelectNet set to "VDD VSS"
+[04/13 22:36:52     42s] routeSpecial set to true
+[04/13 22:36:52     42s] srouteBlockPin set to "useLef"
+[04/13 22:36:52     42s] srouteBottomLayerLimit set to 1
+[04/13 22:36:52     42s] srouteBottomTargetLayerLimit set to 1
+[04/13 22:36:52     42s] srouteConnectConverterPin set to false
+[04/13 22:36:52     42s] srouteConnectPadPin set to false
+[04/13 22:36:52     42s] srouteCrossoverViaBottomLayer set to 1
+[04/13 22:36:52     42s] srouteCrossoverViaTopLayer set to 9
+[04/13 22:36:52     42s] srouteFloatingStripeTarget set to "blockring ring stripe padring ringpin blockpin followpin"
+[04/13 22:36:52     42s] srouteFollowCorePinEnd set to 3
+[04/13 22:36:52     42s] srouteFollowPadPin set to false
+[04/13 22:36:52     42s] srouteJogControl set to "preferWithChanges differentLayer"
+[04/13 22:36:52     42s] srouteNoViaOnWireShape set to "padring ring blockring blockpin coverpin noshape blockwire corewire followpin iowire"
+[04/13 22:36:52     42s] sroutePadPinAllPorts set to true
+[04/13 22:36:52     42s] sroutePreserveExistingRoutes set to true
+[04/13 22:36:52     42s] srouteRoutePowerBarPortOnBothDir set to true
+[04/13 22:36:52     42s] srouteStopBlockPin set to "nearestTarget"
+[04/13 22:36:52     42s] srouteStopSCPin set to true
+[04/13 22:36:52     42s] srouteTopLayerLimit set to 9
+[04/13 22:36:52     42s] srouteTopTargetLayerLimit set to 9
+[04/13 22:36:52     42s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 3059.00 megs.
+[04/13 22:36:52     42s] 
+[04/13 22:36:52     42s] Reading DB technology information...
+[04/13 22:36:53     43s] Finished reading DB technology information.
+[04/13 22:36:53     43s] Reading floorplan and netlist information...
+[04/13 22:36:53     43s] Finished reading floorplan and netlist information.
+[04/13 22:36:53     43s] **WARN: (IMPSR-4302):	Cap-table/qrcTechFile is found in the design, so the same information from the technology file will be ignored.
+[04/13 22:36:53     43s] Read in 24 layers, 11 routing layers, 1 overlap layer
+[04/13 22:36:53     43s] Read in 2 nondefault rules, 0 used
+[04/13 22:36:53     43s] Read in 1559 macros, 20 used
+[04/13 22:36:53     43s] Read in 159 components
+[04/13 22:36:53     43s]   159 core components: 19 unplaced, 0 placed, 140 fixed
+[04/13 22:36:53     43s] Read in 28 physical pins
+[04/13 22:36:53     43s]   28 physical pins: 0 unplaced, 0 placed, 28 fixed
+[04/13 22:36:53     43s] Read in 54 logical pins
+[04/13 22:36:53     43s] Read in 53 nets
+[04/13 22:36:53     43s] Read in 2 special nets, 2 routed
+[04/13 22:36:53     43s] Read in 346 terminals
+[04/13 22:36:53     43s] 2 nets selected.
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s] Begin power routing ...
+[04/13 22:36:53     43s] **WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VDD net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+[04/13 22:36:53     43s] **WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VSS net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+[04/13 22:36:53     43s] CPU time for VDD FollowPin 0 seconds
+[04/13 22:36:53     43s] CPU time for VSS FollowPin 0 seconds
+[04/13 22:36:53     43s]   Number of Block ports routed: 0
+[04/13 22:36:53     43s]   Number of Stripe ports routed: 0
+[04/13 22:36:53     43s]   Number of Core ports routed: 0
+[04/13 22:36:53     43s]   Number of Power Bump ports routed: 0
+[04/13 22:36:53     43s]   Number of Followpin connections: 40
+[04/13 22:36:53     43s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 3084.00 megs.
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s]  Begin updating DB with routing results ...
+[04/13 22:36:53     43s]  Updating DB with 28 io pins ...
+[04/13 22:36:53     43s]  Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+[04/13 22:36:53     43s] Pin and blockage extraction finished
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s] sroute created 40 wires.
+[04/13 22:36:53     43s] ViaGen created 980 vias, deleted 0 via to avoid violation.
+[04/13 22:36:53     43s] +--------+----------------+----------------+
+[04/13 22:36:53     43s] |  Layer |     Created    |     Deleted    |
+[04/13 22:36:53     43s] +--------+----------------+----------------+
+[04/13 22:36:53     43s] | Metal1 |       40       |       NA       |
+[04/13 22:36:53     43s] |  Via1  |       140      |        0       |
+[04/13 22:36:53     43s] |  Via2  |       140      |        0       |
+[04/13 22:36:53     43s] |  Via3  |       140      |        0       |
+[04/13 22:36:53     43s] |  Via4  |       140      |        0       |
+[04/13 22:36:53     43s] |  Via5  |       140      |        0       |
+[04/13 22:36:53     43s] |  Via6  |       140      |        0       |
+[04/13 22:36:53     43s] |  Via7  |       140      |        0       |
+[04/13 22:36:53     43s] +--------+----------------+----------------+
+[04/13 22:36:53     43s] #% End sroute (date=04/13 22:36:53, total cpu=0:00:00.8, real=0:00:01.0, peak res=1571.1M, current mem=1545.2M)
+[04/13 22:36:53     43s] <CMD> verify_PG_short
+[04/13 22:36:53     43s]  *** Starting VERIFY PG SHORT(MEM: 1583.9) ***
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s]   VERIFY PG SHORT ...... Initializing
+[04/13 22:36:53     43s]   VERIFY PG SHORT ...... Deleting Existing Violations
+[04/13 22:36:53     43s]   VERIFY PG SHORT ...... Creating Sub-Areas
+[04/13 22:36:53     43s]                   ...... bin size: 1920
+[04/13 22:36:53     43s]   VERIFY PG SHORT ...... SubArea : 1 of 1
+[04/13 22:36:53     43s]   VERIFY PG SHORT ...... Short:  0 Viols.
+[04/13 22:36:53     43s]   Verification Complete : 0 Short Viols.
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s] **********End: VERIFY PG SHORT**********
+[04/13 22:36:53     43s]  *** verify PG short (CPU: 0:00:00.1  MEM: 425.4M)
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s] <CMD> verify_drc
+[04/13 22:36:53     43s] #-check_same_via_cell true               # bool, default=false, user setting
+[04/13 22:36:53     43s]  *** Starting Verify DRC (MEM: 2009.3) ***
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s] #create default rule from bind_ndr_rule rule=0x7f7f46d9b660 0x7f7f27f9a568
+[04/13 22:36:53     43s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[04/13 22:36:53     43s]   VERIFY DRC ...... Starting Verification
+[04/13 22:36:53     43s]   VERIFY DRC ...... Initializing
+[04/13 22:36:53     43s]   VERIFY DRC ...... Deleting Existing Violations
+[04/13 22:36:53     43s]   VERIFY DRC ...... Creating Sub-Areas
+[04/13 22:36:53     43s]   VERIFY DRC ...... Using new threading
+[04/13 22:36:53     43s]   VERIFY DRC ...... Sub-Area: {0.000 0.000 68.670 66.690} 1 of 1
+[04/13 22:36:53     43s]   VERIFY DRC ...... Sub-Area : 1 complete 51 Viols.
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s]   Verification Complete : 51 Viols.
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s]  Violation Summary By Layer and Type:
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s] 	       outOfDie   Totals
+[04/13 22:36:53     43s] 	Metal1        2        2
+[04/13 22:36:53     43s] 	Metal2        7        7
+[04/13 22:36:53     43s] 	Metal3        7        7
+[04/13 22:36:53     43s] 	Metal4        7        7
+[04/13 22:36:53     43s] 	Metal5        7        7
+[04/13 22:36:53     43s] 	Metal6        7        7
+[04/13 22:36:53     43s] 	Metal7        7        7
+[04/13 22:36:53     43s] 	Metal8        7        7
+[04/13 22:36:53     43s] 	Totals       51       51
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s]  *** End Verify DRC (CPU: 0:00:00.0  ELAPSED TIME: 0.00  MEM: 256.1M) ***
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s] <CMD> verify_connectivity -allPGPinPort -net {VDD VSS} -error 200000
+[04/13 22:36:53     43s] VERIFY_CONNECTIVITY use new engine.
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s] ******** Start: VERIFY CONNECTIVITY ********
+[04/13 22:36:53     43s] Start Time: Mon Apr 13 22:36:53 2026
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s] Design Name: memory
+[04/13 22:36:53     43s] Database Units: 2000
+[04/13 22:36:53     43s] Design Boundary: (0.0000, 0.0000) (68.6700, 66.6900)
+[04/13 22:36:53     43s] Error Limit = 200000; Warning Limit = 50
+[04/13 22:36:53     43s] Check specified nets
+[04/13 22:36:53     43s] *** Checking Net VDD
+[04/13 22:36:53     43s] *** Checking Net VSS
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s] Begin Summary 
+[04/13 22:36:53     43s]   Found no problems or warnings.
+[04/13 22:36:53     43s] End Summary
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s] End Time: Mon Apr 13 22:36:53 2026
+[04/13 22:36:53     43s] Time Elapsed: 0:00:00.0
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s] ******** End: VERIFY CONNECTIVITY ********
+[04/13 22:36:53     43s]   Verification Complete : 0 Viols.  0 Wrngs.
+[04/13 22:36:53     43s]   (CPU Time: 0:00:00.0  MEM: 0.000M)
+[04/13 22:36:53     43s] 
+[04/13 22:36:53     43s] invalid command name "187,0-1"
+[04/13 22:36:57     44s] <CMD> zoomBox -16.73550 -19.41800 227.27150 98.55050
+[04/13 22:37:04     45s] <CMD> setLayerPreference node_track -isVisible 1
+[04/13 22:37:11     47s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Mon Apr 13 22:37:11 2026
+  Total CPU time:     0:00:49
+  Total real time:    0:02:30
+  Peak memory (main): 1561.00MB
+
+[04/13 22:37:11     47s] 
+[04/13 22:37:11     47s] *** Memory Usage v#1 (Current mem = 1858.332M, initial mem = 483.863M) ***
+[04/13 22:37:11     47s] 
+[04/13 22:37:11     47s] *** Summary of all messages that are not suppressed in this session:
+[04/13 22:37:11     47s] Severity  ID               Count  Summary                                  
+[04/13 22:37:11     47s] WARNING   IMPLF-200            3  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[04/13 22:37:11     47s] WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+[04/13 22:37:11     47s] ERROR     IMPDBTCL-4001        1  Failed to set the '%s' attribute, becaus...
+[04/13 22:37:11     47s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[04/13 22:37:11     47s] WARNING   IMPPP-133          280  The block boundary of the '%s' instance ...
+[04/13 22:37:11     47s] WARNING   IMPPP-4051           1  Failed to add rings, because the IO cell...
+[04/13 22:37:11     47s] WARNING   IMPPP-220            1  The power planner does not create core r...
+[04/13 22:37:11     47s] WARNING   IMPSR-4302           1  Cap-table/qrcTechFile is found in the de...
+[04/13 22:37:11     47s] WARNING   IMPSR-1254           2  Unable to connect the specified objects,...
+[04/13 22:37:11     47s] WARNING   IMPSP-5534           3  '%s' and '%s' are using the same endcap ...
+[04/13 22:37:11     47s] WARNING   IMPCTE-290          96  Could not locate cell %s in any library ...
+[04/13 22:37:11     47s] WARNING   TCLCMD-1142          1  Virtual clock '%s' is being created with...
+[04/13 22:37:11     47s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[04/13 22:37:11     47s] WARNING   TECHLIB-302         10  No function defined for cell '%s'. The c...
+[04/13 22:37:11     47s] WARNING   TECHLIB-459          3  Appending library '%s' to the previously...
+[04/13 22:37:11     47s] ERROR     TECHLIB-1198         2  The 'index_%d' is defined but its corres...
+[04/13 22:37:11     47s] *** Message Summary: 406 warning(s), 3 error(s)
+[04/13 22:37:11     47s] 
+[04/13 22:37:11     47s] --- Ending "Innovus" (totcpu=0:00:47.2, real=0:02:29, mem=1858.3M) ---
